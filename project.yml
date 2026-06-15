@@ -55,7 +55,10 @@ schemes:
     test:
       config: Debug
       targets:
-        - SwiftUIAppUITests
+        - name: SwiftUIAppUITests
+          # ツリー採取はスクリプト経由(-only-testing)で実行するため通常のtestからは除外
+          skippedTests:
+            - AccessibilityTreeSnapshotTests
   UIKitApp:
     build:
       targets:
