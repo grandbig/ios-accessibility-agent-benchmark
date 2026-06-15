@@ -33,3 +33,32 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.grandbig.a11ybench.uikit
         INFOPLIST_KEY_CFBundleDisplayName: A11y UIKit
         INFOPLIST_KEY_UILaunchScreen_Generation: YES
+  SwiftUIAppUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: SwiftUIAppUITests
+    dependencies:
+      - target: SwiftUIApp
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.grandbig.a11ybench.swiftui.uitests
+        TEST_TARGET_NAME: SwiftUIApp
+schemes:
+  SwiftUIApp:
+    build:
+      targets:
+        SwiftUIApp: all
+        SwiftUIAppUITests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - SwiftUIAppUITests
+  UIKitApp:
+    build:
+      targets:
+        UIKitApp: all
+    run:
+      config: Debug
