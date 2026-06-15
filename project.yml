@@ -1,0 +1,35 @@
+name: AccessibilityBenchmark
+options:
+  bundleIdPrefix: com.grandbig.a11ybench
+  deploymentTarget:
+    iOS: "18.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    SWIFT_VERSION: "5.0"
+    TARGETED_DEVICE_FAMILY: "1"
+    GENERATE_INFOPLIST_FILE: YES
+    CODE_SIGN_STYLE: Automatic
+targets:
+  SwiftUIApp:
+    type: application
+    platform: iOS
+    sources:
+      - path: SwiftUIApp
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.grandbig.a11ybench.swiftui
+        INFOPLIST_KEY_CFBundleDisplayName: A11y SwiftUI
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+  UIKitApp:
+    type: application
+    platform: iOS
+    sources:
+      - path: UIKitApp
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.grandbig.a11ybench.uikit
+        INFOPLIST_KEY_CFBundleDisplayName: A11y UIKit
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
