@@ -1,0 +1,67 @@
+Optional(Attributes: Application, 0x106f04710, pid: 61640, label: 'A11y UIKit'
+Element subtree:
+ →Application, 0x106f04710, pid: 61640, label: 'A11y UIKit'
+    Window (Main), 0x106f07570, {{0.0, 0.0}, {375.0, 667.0}}
+      Other, 0x106f09680, {{0.0, 0.0}, {375.0, 667.0}}
+        Other, 0x106f097a0, {{0.0, 0.0}, {375.0, 667.0}}
+          Other, 0x106f093e0, {{0.0, 0.0}, {375.0, 667.0}}
+            Other, 0x106f09500, {{0.0, 0.0}, {375.0, 667.0}}
+              Other, 0x106f07df0, {{0.0, 0.0}, {375.0, 667.0}}
+                Other, 0x106f07bb0, {{0.0, 0.0}, {375.0, 667.0}}
+                  NavigationBar, 0x106f07cd0, {{0.0, 20.0}, {375.0, 54.0}}, identifier: 'About'
+                    StaticText, 0x106f098c0, {{163.2, 31.8}, {48.5, 20.5}}, label: 'About'
+                  Other, 0x106f099e0, {{0.0, 0.0}, {375.0, 667.0}}
+                    Other, 0x106f07f10, {{0.0, 0.0}, {375.0, 667.0}}
+                      Table, 0x106f08030, {{0.0, 0.0}, {375.0, 667.0}}
+                        Cell, 0x106f08150, {{16.0, 109.0}, {343.0, 51.5}}
+                          Other, 0x106f08270, {{16.0, 109.0}, {343.0, 51.5}}
+                            Other, 0x106f08390, {{16.0, 109.0}, {343.0, 51.5}}
+                          StaticText, 0x106f084b0, {{32.0, 124.0}, {311.0, 21.5}}, identifier: 'about.title', label: 'iOS Accessibility × Agent Benchmark'
+                          Other, 0x106f085d0, {{32.0, 159.5}, {311.0, 1.0}}
+                        Cell, 0x106f086f0, {{16.0, 160.5}, {343.0, 49.0}}
+                          Other, 0x106f08810, {{16.0, 160.5}, {343.0, 49.0}}
+                            Other, 0x106f08930, {{16.0, 160.5}, {343.0, 49.0}}
+                          Other, 0x106f08a50, {{16.0, 208.5}, {343.0, 1.0}}
+                          StaticText, 0x106f08b70, {{32.0, 175.5}, {311.0, 19.0}}, identifier: 'about.subtitle', label: '基本要素の基準値画面（UIKit）'
+                        Other, 0x106f08c90, {{342.0, 74.0}, {30.0, 510.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                          Other, 0x106f08db0, {{369.0, 414.0}, {3.0, 167.0}}
+                        Other, 0x106f08ed0, {{0.0, 551.0}, {375.0, 30.0}}, label: 'Horizontal scroll bar, 1 page', value: 0%
+                          Other, 0x106f08ff0, {{3.0, 578.0}, {369.0, 3.0}}
+                  Other, 0x106f0a590, {{0.0, 0.0}, {375.0, 667.0}}
+                    Other, 0x106f0a6b0, {{0.0, 0.0}, {375.0, 667.0}}
+            Other, 0x106f0a7d0, {{0.0, 584.0}, {375.0, 83.0}}
+              Other, 0x106f0a8f0, {{0.0, 0.0}, {375.0, 667.0}}
+                TabBar, 0x106f0aa10, {{0.0, 584.0}, {375.0, 83.0}}, label: 'Tab Bar'
+                  Other, 0x106f0ab30, {{94.0, 584.0}, {188.0, 62.0}}
+                    Other, 0x106f0ac50, {{94.0, 584.0}, {94.0, 54.0}}
+                    Other, 0x106f0ad70, {{94.0, 584.0}, {188.0, 62.0}}
+                      Button, 0x106f0ae90, {{98.0, 588.0}, {94.0, 54.0}}, label: '基本要素'
+                        Image, 0x106f0afb0, {{132.0, 595.5}, {27.0, 25.0}}, identifier: 'square.grid.2x2', label: 'Grid view'
+                      Button, 0x106f0b0d0, {{184.0, 588.0}, {94.0, 54.0}}, label: 'About', Selected
+                        Image, 0x106f0b1f0, {{217.0, 594.0}, {27.5, 27.5}}, identifier: 'info.circle', label: 'info'
+                    Other, 0x106f0b310, {{184.0, 588.0}, {94.0, 54.0}}
+                      Other, 0x106f0b430, {{184.0, 588.0}, {94.0, 54.0}}
+                        Other, 0x106f0b550, {{184.0, 588.0}, {94.0, 54.0}}
+                          Other, 0x106f0b670, {{184.0, 588.0}, {94.0, 54.0}}
+                        Other, 0x106f0b790, {{184.0, 588.0}, {94.0, 54.0}}
+                          Other, 0x106f0b8b0, {{184.0, 588.0}, {94.0, 54.0}}
+                            Other, 0x106f0b9d0, {{184.0, 588.0}, {94.0, 54.0}}
+                              Other, 0x106f0baf0, {{184.0, 588.0}, {94.0, 54.0}}
+                            Other, 0x106f0bc10, {{184.0, 588.0}, {94.0, 54.0}}
+                          Other, 0x106f0bd30, {{184.0, 588.0}, {94.0, 54.0}}
+              Other, 0x106f0be50, {{0.0, 584.0}, {375.0, 83.0}}
+                Other, 0x106f0bf70, {{0.0, 584.0}, {375.0, 83.0}}
+                  Other, 0x106f0c090, {{0.0, 584.0}, {375.0, 83.0}}
+                    Other, 0x106f0c1b0, {{0.0, 584.0}, {375.0, 83.0}}
+                      Other, 0x106f0c2d0, {{0.0, 584.0}, {375.0, 83.0}}
+                        Other, 0x106f0c3f0, {{0.0, 584.0}, {375.0, 83.0}}
+                    Other, 0x106f0c510, {{0.0, 584.0}, {375.0, 83.0}}
+                      Other, 0x106f0c630, {{0.0, 584.0}, {375.0, 83.0}}
+Path to element:
+ →Application, 0x106f04710, pid: 61640, label: 'A11y UIKit'
+Query chain:
+ →Find: Target Application 'com.grandbig.a11ybench.uikit'
+  Output: {
+    Application, 0x106e05b80, pid: 61640, label: 'A11y UIKit'
+  }
+)

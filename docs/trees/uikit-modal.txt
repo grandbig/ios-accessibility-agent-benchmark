@@ -1,0 +1,156 @@
+Optional(Attributes: Application, 0x101e2b670, pid: 61640, label: 'A11y UIKit'
+Element subtree:
+ →Application, 0x101e2b670, pid: 61640, label: 'A11y UIKit'
+    Window (Main), 0x101e40f00, {{0.0, 0.0}, {375.0, 667.0}}
+      Other, 0x101e49b70, {{0.0, 0.0}, {375.0, 667.0}}
+        Other, 0x101e41420, {{0.0, 0.0}, {375.0, 667.0}}
+          Other, 0x101e4a410, {{-375.0, -667.0}, {1125.0, 2001.0}}
+          Other, 0x101e41e90, {{0.0, 0.0}, {375.0, 667.0}}
+            Other, 0x101e3cf20, {{0.0, 0.0}, {375.0, 667.0}}
+              Other, 0x101e3d990, {{0.0, 0.0}, {375.0, 667.0}}
+                Other, 0x101e3aed0, {{0.0, 0.0}, {375.0, 667.0}}
+                  NavigationBar, 0x101e28880, {{0.0, 20.0}, {375.0, 54.0}}, identifier: '基本要素'
+                    StaticText, 0x101e278f0, {{155.5, 31.8}, {64.0, 20.5}}, label: '基本要素'
+                  Other, 0x101e22ea0, {{0.0, 0.0}, {375.0, 667.0}}
+                    Other, 0x101e24580, {{0.0, 0.0}, {375.0, 667.0}}
+                      Table, 0x101e37680, {{0.0, 0.0}, {375.0, 667.0}}
+                        Other, 0x101e26e30, {{0.0, -329.0}, {375.0, 38.0}}
+                          StaticText, 0x101e364b0, {{0.0, -329.0}, {375.0, 38.0}}, label: 'テキスト'
+                        Cell, 0x101e25270, {{16.0, -343.0}, {343.0, 52.0}}
+                          Other, 0x101e45730, {{0.0, -381.0}, {343.0, 52.0}}
+                            Other, 0x101e1e950, {{0.0, -381.0}, {343.0, 52.0}}
+                          Other, 0x101e44f90, {{0.0, -381.0}, {343.0, 1.0}}
+                          StaticText, 0x101e2f940, {{0.0, -381.0}, {311.0, 22.0}}, identifier: 'basics.staticText', label: 'これは静的なテキストです。'
+                        Other, 0x101e21e90, {{0.0, -169.5}, {375.0, 38.0}}
+                          StaticText, 0x101e3b410, {{0.0, -169.5}, {375.0, 38.0}}, label: 'ボタン'
+                        Cell, 0x101e30400, {{16.0, -235.5}, {343.0, 52.0}}
+                          Other, 0x101e3ef20, {{0.0, -381.0}, {343.0, 52.0}}
+                            Other, 0x101e434c0, {{0.0, -381.0}, {343.0, 52.0}}
+                          Other, 0x101e45a90, {{0.0, -381.0}, {311.0, 1.0}}
+                          Button, 0x101e28140, {{0.0, -381.0}, {311.0, 22.0}}, identifier: 'basics.primaryButton', label: 'タップ回数: 0'
+                            StaticText, 0x101e290c0, {{0.0, -381.0}, {88.0, 18.0}}, label: 'タップ回数: 0'
+                        Cell, 0x101e2c3e0, {{16.0, -183.5}, {343.0, 52.0}}
+                          Other, 0x101e2cdf0, {{0.0, -381.0}, {343.0, 52.0}}
+                            Other, 0x101e2ee40, {{0.0, -381.0}, {343.0, 52.0}}
+                          Other, 0x101e31420, {{0.0, -381.0}, {343.0, 1.0}}
+                          StaticText, 0x101e35a10, {{0.0, -381.0}, {48.0, 20.5}}, label: 'トグル'
+                          Switch, 0x101e3c470, {{0.0, -381.0}, {63.0, 28.0}}, identifier: 'basics.toggle', value: 0
+                        Other, 0x101e41740, {{0.0, -10.0}, {375.0, 38.0}}
+                          StaticText, 0x101e421b0, {{0.0, -10.0}, {375.0, 38.0}}, label: '入力'
+                        Cell, 0x101e43f60, {{16.0, -76.0}, {343.0, 52.0}}
+                          Other, 0x101e2eaa0, {{0.0, -381.0}, {343.0, 52.0}}
+                            Other, 0x101e1b5f0, {{0.0, -381.0}, {343.0, 52.0}}
+                          Other, 0x101e221d0, {{0.0, -381.0}, {311.0, 1.0}}
+                          TextField, 0x101e27c00, {{0.0, -381.0}, {311.0, 22.0}}, identifier: 'basics.textField', placeholderValue: 'テキストを入力'
+                        Cell, 0x101e2a760, {{16.0, -24.0}, {343.0, 52.0}}
+                          Other, 0x101e2d300, {{16.0, -24.0}, {343.0, 52.0}}
+                            Other, 0x101e2e300, {{16.0, -24.0}, {343.0, 52.0}}
+                          Other, 0x101e32260, {{16.0, 27.0}, {343.0, 1.0}}
+                          SecureTextField, 0x101e32dc0, {{32.0, -9.0}, {311.0, 22.0}}, identifier: 'basics.secureField', placeholderValue: 'パスワードを入力'
+                        Other, 0x101e34900, {{0.0, 74.0}, {375.0, 38.0}}
+                          StaticText, 0x101e38ca0, {{0.0, 74.0}, {375.0, 38.0}}, label: 'リスト'
+                        Cell, 0x101e3e5c0, {{16.0, 83.5}, {343.0, 52.0}}
+                          Other, 0x101e3e950, {{16.0, 83.5}, {343.0, 52.0}}
+                            Other, 0x101e3f7a0, {{16.0, 83.5}, {343.0, 52.0}}
+                          StaticText, 0x101e42da0, {{32.0, 98.5}, {311.0, 22.0}}, identifier: 'basics.listItem.0', label: 'りんご'
+                          Other, 0x101e43130, {{32.0, 134.5}, {311.0, 1.0}}
+                        Cell, 0x101e2ab00, {{16.0, 135.5}, {343.0, 52.0}}
+                          Other, 0x101e1eed0, {{16.0, 135.5}, {343.0, 52.0}}
+                            Other, 0x101e255c0, {{16.0, 135.5}, {343.0, 52.0}}
+                          StaticText, 0x101e2f360, {{32.0, 150.5}, {311.0, 22.0}}, identifier: 'basics.listItem.1', label: 'みかん'
+                          Other, 0x101e2fe40, {{32.0, 186.5}, {311.0, 1.0}}
+                        Cell, 0x101e33150, {{16.0, 187.5}, {343.0, 52.0}}
+                          Other, 0x101e38750, {{16.0, 187.5}, {343.0, 52.0}}
+                            Other, 0x101e3a1c0, {{16.0, 187.5}, {343.0, 52.0}}
+                          Other, 0x101e449c0, {{16.0, 238.5}, {343.0, 1.0}}
+                          StaticText, 0x101e31790, {{32.0, 202.5}, {311.0, 22.0}}, identifier: 'basics.listItem.2', label: 'ぶどう'
+                        Other, 0x101e20d80, {{0.0, 257.0}, {375.0, 38.0}}
+                          StaticText, 0x101e3a730, {{0.0, 257.0}, {375.0, 38.0}}, label: 'ScrollView内の要素'
+                        Cell, 0x101e218a0, {{16.0, 295.0}, {343.0, 92.0}}
+                          StaticText, 0x101e24c70, {{100.0, 310.0}, {56.0, 62.0}}, identifier: 'basics.scrollItem.1', label: '1'
+                          StaticText, 0x101e2dd60, {{168.0, 310.0}, {56.0, 62.0}}, identifier: 'basics.scrollItem.2', label: '2'
+                          StaticText, 0x101e32850, {{236.0, 310.0}, {56.0, 62.0}}, identifier: 'basics.scrollItem.3', label: '3'
+                          StaticText, 0x101e3b900, {{304.0, 310.0}, {56.0, 62.0}}, identifier: 'basics.scrollItem.4', label: '4'
+                          StaticText, 0x101e472e0, {{372.0, 310.0}, {56.0, 62.0}}, identifier: 'basics.scrollItem.5', label: '5'
+                          StaticText, 0x101e47400, {{440.0, 310.0}, {56.0, 62.0}}, identifier: 'basics.scrollItem.6', label: '6'
+                          StaticText, 0x101e45e00, {{508.0, 310.0}, {56.0, 62.0}}, identifier: 'basics.scrollItem.7', label: '7'
+                          StaticText, 0x101e45f20, {{576.0, 310.0}, {56.0, 62.0}}, identifier: 'basics.scrollItem.8', label: '8'
+                          StaticText, 0x101e46040, {{644.0, 310.0}, {56.0, 62.0}}, identifier: 'basics.scrollItem.9', label: '9'
+                          Other, 0x101e46160, {{16.0, 295.0}, {343.0, 92.0}}
+                            Other, 0x101e43840, {{16.0, 295.0}, {343.0, 92.0}}
+                          StaticText, 0x101e43960, {{32.0, 310.0}, {56.0, 62.0}}, identifier: 'basics.scrollItem.0', label: '0'
+                          Other, 0x101e43a80, {{16.0, 386.0}, {343.0, 1.0}}
+                        Other, 0x101e43ba0, {{0.0, 404.5}, {375.0, 38.0}}
+                          StaticText, 0x101e4ae10, {{0.0, 404.5}, {375.0, 38.0}}, label: 'モーダル / アラート'
+                        Cell, 0x101e4af30, {{16.0, 442.5}, {343.0, 52.0}}
+                          Other, 0x101e4b050, {{16.0, 442.5}, {343.0, 52.0}}
+                            Other, 0x101e4b170, {{16.0, 442.5}, {343.0, 52.0}}
+                          Button, 0x101e4b290, {{32.0, 457.5}, {311.0, 22.0}}, identifier: 'basics.showModalButton', label: 'モーダルを開く'
+                            StaticText, 0x101e4b3b0, {{32.0, 459.5}, {99.0, 18.0}}, label: 'モーダルを開く'
+                          Other, 0x101e4b4d0, {{32.0, 493.5}, {311.0, 1.0}}
+                        Cell, 0x101e4b5f0, {{16.0, 494.5}, {343.0, 52.0}}
+                          Other, 0x101e4b710, {{16.0, 494.5}, {343.0, 52.0}}
+                            Other, 0x101e4b830, {{16.0, 494.5}, {343.0, 52.0}}
+                          Other, 0x101e4b950, {{16.0, 545.5}, {343.0, 1.0}}
+                          Button, 0x101e4ba70, {{32.0, 509.5}, {311.0, 22.0}}, identifier: 'basics.showAlertButton', label: 'アラートを表示'
+                            StaticText, 0x101e4bb90, {{32.0, 511.5}, {99.0, 18.0}}, label: 'アラートを表示'
+                        Other, 0x101e4bcb0, {{342.0, 74.0}, {30.0, 510.0}}, label: 'Vertical scroll bar, 2 pages', value: 100%
+                          Other, 0x101e4bdd0, {{369.0, 281.5}, {3.0, 299.5}}
+                        Other, 0x101e4bef0, {{0.0, 551.0}, {375.0, 30.0}}, label: 'Horizontal scroll bar, 1 page', value: 0%
+                          Other, 0x101e4c010, {{3.0, 578.0}, {366.0, 3.0}}
+                        Other, 0x101e4c130, {{16.0, 257.0}, {343.0, 38.0}}, label: 'ScrollView内の要素'
+                        Other, 0x101e4c250, {{16.0, 404.5}, {343.0, 38.0}}, label: 'モーダル / アラート'
+                        Other, 0x101e4c370, {{16.0, 45.5}, {343.0, 38.0}}, label: 'リスト'
+                  Other, 0x101e4c490, {{0.0, 0.0}, {375.0, 667.0}}
+                    Other, 0x101e4c5b0, {{0.0, 0.0}, {375.0, 667.0}}
+            Other, 0x101e4c6d0, {{0.0, 584.0}, {375.0, 83.0}}
+              Other, 0x101e4c7f0, {{0.0, 0.0}, {375.0, 667.0}}
+                TabBar, 0x101e4c910, {{0.0, 584.0}, {375.0, 83.0}}, label: 'Tab Bar'
+                  Other, 0x101e4ca30, {{94.0, 584.0}, {188.0, 62.0}}
+                    Other, 0x101e4cb50, {{94.0, 584.0}, {94.0, 54.0}}
+                    Other, 0x101e4cc70, {{94.0, 584.0}, {188.0, 62.0}}
+                      Button, 0x101e4cd90, {{98.0, 588.0}, {94.0, 54.0}}, label: '基本要素', Selected
+                        Image, 0x101e4ceb0, {{132.0, 595.5}, {27.0, 25.0}}, identifier: 'square.grid.2x2', label: 'Grid view'
+                      Button, 0x101e4cfd0, {{184.0, 588.0}, {94.0, 54.0}}, label: 'About'
+                        Image, 0x101e4d0f0, {{217.0, 594.0}, {27.5, 27.5}}, identifier: 'info.circle', label: 'info'
+                    Other, 0x101e4d210, {{98.0, 588.0}, {94.0, 54.0}}
+                      Other, 0x101e4d330, {{98.0, 588.0}, {94.0, 54.0}}
+                        Other, 0x101e4d450, {{98.0, 588.0}, {94.0, 54.0}}
+                          Other, 0x101e4d570, {{98.0, 588.0}, {94.0, 54.0}}
+                        Other, 0x101e4d690, {{98.0, 588.0}, {94.0, 54.0}}
+                          Other, 0x101e4d7b0, {{98.0, 588.0}, {94.0, 54.0}}
+                            Other, 0x101e4d8d0, {{98.0, 588.0}, {94.0, 54.0}}
+                              Other, 0x101e4d9f0, {{98.0, 588.0}, {94.0, 54.0}}
+                            Other, 0x101e4db10, {{98.0, 588.0}, {94.0, 54.0}}
+                          Other, 0x101e4dc30, {{98.0, 588.0}, {94.0, 54.0}}
+              Other, 0x101e4dd50, {{0.0, 584.0}, {375.0, 83.0}}
+                Other, 0x101e4de70, {{0.0, 584.0}, {375.0, 83.0}}
+                  Other, 0x101e4df90, {{0.0, 584.0}, {375.0, 83.0}}
+                    Other, 0x101e4e0b0, {{0.0, 584.0}, {375.0, 83.0}}
+                      Other, 0x101e4e1d0, {{0.0, 584.0}, {375.0, 83.0}}
+                        Other, 0x101e4e2f0, {{0.0, 584.0}, {375.0, 83.0}}
+      Other, 0x101e4e410, {{0.0, 0.0}, {375.0, 667.0}}
+        Other, 0x101e4e530, {{-375.0, -667.0}, {1125.0, 2001.0}}
+        Other, 0x101e4e650, {{0.0, 30.0}, {375.0, 637.0}}
+          Other, 0x101e4e770, {{0.0, 30.0}, {375.0, 637.0}}
+            Other, 0x101e4e890, {{0.0, 30.0}, {375.0, 637.0}}
+              Other, 0x101e4e9b0, {{0.0, 30.0}, {375.0, 637.0}}
+                NavigationBar, 0x101e4ead0, {{0.0, 46.0}, {375.0, 54.0}}, identifier: 'モーダル'
+                  StaticText, 0x101e4ebf0, {{155.5, 57.8}, {64.0, 20.5}}, label: 'モーダル'
+                  Button, 0x101e4ed10, {{291.0, 50.0}, {64.0, 36.0}}, identifier: 'modal.closeButton', label: '閉じる'
+                Other, 0x101e4ee30, {{0.0, 30.0}, {375.0, 637.0}}
+                  Other, 0x101e4ef50, {{0.0, 30.0}, {375.0, 637.0}}
+                    Other, 0x101e4f070, {{0.0, 30.0}, {375.0, 637.0}}
+                      Other, 0x101e4f190, {{88.0, 317.0}, {199.0, 63.0}}
+                        StaticText, 0x101e4f2b0, {{146.5, 317.0}, {82.5, 26.5}}, identifier: 'modal.title', label: 'モーダル'
+                        StaticText, 0x101e4f3d0, {{88.0, 359.5}, {199.0, 20.5}}, identifier: 'modal.body', label: 'これは標準のモーダルです。'
+                Other, 0x101e4f4f0, {{0.0, 30.0}, {375.0, 637.0}}
+                  Other, 0x101e4f610, {{0.0, 30.0}, {375.0, 637.0}}
+Path to element:
+ →Application, 0x101e2b670, pid: 61640, label: 'A11y UIKit'
+Query chain:
+ →Find: Target Application 'com.grandbig.a11ybench.uikit'
+  Output: {
+    Application, 0x102639190, pid: 61640, label: 'A11y UIKit'
+  }
+)

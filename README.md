@@ -9,7 +9,11 @@ VoiceOver・XCUITest・Maestro・agent-device（AI Agent）の認識・自動操
 | ターゲット | 説明 |
 | -- | -- |
 | `SwiftUIApp` | SwiftUI 実装。bundle id: `com.grandbig.a11ybench.swiftui` |
-| `UIKitApp` | UIKit 実装（現状はプレースホルダ）。bundle id: `com.grandbig.a11ybench.uikit` |
+| `UIKitApp` | UIKit 実装（SwiftUI と同一 UI・同一 identifier）。bundle id: `com.grandbig.a11ybench.uikit` |
+| `SwiftUIAppUITests` / `UIKitAppUITests` | 各アプリの基準値 XCUITest |
+
+SwiftUI / UIKit の差分比較は `docs/swiftui-vs-uikit.md`、
+基準値の詳細は `docs/xcuitest-baseline.md` を参照。
 
 `.xcodeproj` は [XcodeGen](https://github.com/yonaskolb/XcodeGen) で `project.yml` から生成する（git 管理対象外）。
 
@@ -32,7 +36,13 @@ xcodebuild -project AccessibilityBenchmark.xcodeproj \
 
 ## 検証対象 UI
 
-現在は「基本要素」の基準値画面（SwiftUI）を実装済み。
+「基本要素」の基準値画面を SwiftUI / UIKit の両方で実装済み（同一 UI・同一 identifier）。
 Text / Button / Toggle / TextField / SecureField / List item / Tab /
-Modal(sheet) / Alert / ScrollView 内の要素を含む。操作対象には
+Modal / Alert / ScrollView 内の要素を含む。操作対象には
 `<screen>.<element>` 命名規約で `accessibilityIdentifier` を付与している。
+
+## アクセシビリティツリーの採取
+
+```sh
+scripts/dump-accessibility-trees.sh   # docs/trees/{swiftui,uikit}-*.txt を生成
+```

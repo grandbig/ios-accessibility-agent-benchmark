@@ -44,6 +44,17 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.grandbig.a11ybench.swiftui.uitests
         TEST_TARGET_NAME: SwiftUIApp
+  UIKitAppUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: UIKitAppUITests
+    dependencies:
+      - target: UIKitApp
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.grandbig.a11ybench.uikit.uitests
+        TEST_TARGET_NAME: UIKitApp
 schemes:
   SwiftUIApp:
     build:
@@ -63,5 +74,36 @@ schemes:
     build:
       targets:
         UIKitApp: all
+        UIKitAppUITests: [test]
     run:
       config: Debug
+    test:
+      config: Debug
+      targets:
+        - name: UIKitAppUITests
+          # ツリー採取はSwiftUIApp-Trees/UIKitApp-Treesスキームで実行するため通常のtestからは除外
+          skippedTests:
+            - UIKitAccessibilityTreeSnapshotTests
+  # ツリー採取専用スキーム（scripts/dump-accessibility-trees.sh から使用）
+  SwiftUIApp-Trees:
+    build:
+      targets:
+        SwiftUIApp: all
+        SwiftUIAppUITests: [test]
+    test:
+      config: Debug
+      targets:
+        - name: SwiftUIAppUITests
+          selectedTests:
+            - AccessibilityTreeSnapshotTests
+  UIKitApp-Trees:
+    build:
+      targets:
+        UIKitApp: all
+        UIKitAppUITests: [test]
+    test:
+      config: Debug
+      targets:
+        - name: UIKitAppUITests
+          selectedTests:
+            - UIKitAccessibilityTreeSnapshotTests
