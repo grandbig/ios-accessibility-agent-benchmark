@@ -52,6 +52,7 @@ VoiceOver・XCUITest・Maestro・agent-device（AI Agent）の認識・自動操
 - `docs/voiceover.md` — VoiceOver の実測（`performAccessibilityAudit` ＋ 読み上げ内容）
 - `docs/maestro.md` — Maestro（実E2Eツール）視点と XCUITest とのクロスツール比較（`maestro/` にフロー）
 - `docs/agent-device.md` — agent-device（AI Agent）視点と、id駆動 vs label駆動で効く問題の違い
+- `docs/ai-agent-scope.md` — AI Agent のツリー型 vs ビジョン型の整理（同じ Canvas ボタンで対比）
 
 `.xcodeproj` は [XcodeGen](https://github.com/yonaskolb/XcodeGen) で `project.yml` から生成する（git 管理対象外）。
 
