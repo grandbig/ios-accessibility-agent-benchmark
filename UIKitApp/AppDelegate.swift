@@ -30,15 +30,22 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
             tag: 1
         )
 
+        let grouping = UINavigationController(rootViewController: GroupingViewController())
+        grouping.tabBarItem = UITabBarItem(
+            title: "Grouping",
+            image: UIImage(systemName: "rectangle.3.group"),
+            tag: 2
+        )
+
         let about = UINavigationController(rootViewController: AboutViewController())
         about.tabBarItem = UITabBarItem(
             title: "About",
             image: UIImage(systemName: "info.circle"),
-            tag: 2
+            tag: 3
         )
 
         let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [basics, idLabel, about]
+        tabBarController.viewControllers = [basics, idLabel, grouping, about]
         return tabBarController
     }
 }

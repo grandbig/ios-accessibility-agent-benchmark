@@ -1,103 +1,105 @@
-Optional(Attributes: Application, 0x10603d360, pid: 98312, label: 'A11y UIKit'
+Optional(Attributes: Application, 0x103f27a80, pid: 23931, label: 'A11y UIKit'
 Element subtree:
- →Application, 0x10603d360, pid: 98312, label: 'A11y UIKit'
-    Window (Main), 0x10603d8e0, {{0.0, 0.0}, {375.0, 667.0}}
-      Other, 0x10603f060, {{0.0, 0.0}, {375.0, 667.0}}
-        Other, 0x10603f180, {{0.0, 0.0}, {375.0, 667.0}}
-          Other, 0x10603edc0, {{0.0, 0.0}, {375.0, 667.0}}
-            Other, 0x10603eee0, {{0.0, 0.0}, {375.0, 667.0}}
-              Other, 0x10603f720, {{0.0, 0.0}, {375.0, 667.0}}
-                Other, 0x10603f2a0, {{0.0, 0.0}, {375.0, 667.0}}
-                  NavigationBar, 0x10603f3c0, {{0.0, 20.0}, {375.0, 54.0}}, identifier: 'ID/Label'
-                    StaticText, 0x10603f4e0, {{155.0, 31.8}, {65.0, 20.5}}, label: 'ID/Label'
-                  Other, 0x10603f600, {{0.0, 0.0}, {375.0, 667.0}}
-                    Other, 0x10603f840, {{0.0, 0.0}, {375.0, 667.0}}
-                      Other, 0x10603f960, {{0.0, 0.0}, {375.0, 667.0}}
-                        ScrollView, 0x10603fa80, {{0.0, 74.0}, {375.0, 593.0}}
-                          Other, 0x10603fba0, {{16.0, 90.0}, {343.0, 519.5}}
-                            Other, 0x10603fcc0, {{16.0, 90.0}, {215.0, 63.0}}
-                              StaticText, 0x10603fde0, {{16.0, 90.0}, {215.0, 20.5}}, label: '① 子Buttonのみにidentifier'
-                              Other, 0x10603ff00, {{16.0, 118.5}, {125.5, 34.5}}
-                                StaticText, 0x106040020, {{16.0, 125.5}, {16.0, 20.5}}, label: '親'
-                                Button, 0x106040140, {{44.0, 118.5}, {97.5, 34.5}}, identifier: 'idlabel.case1.child', label: '子ボタン1'
-                                  StaticText, 0x106040260, {{56.0, 125.5}, {73.5, 20.5}}, label: '子ボタン1'
-                            Other, 0x106040380, {{16.0, 181.0}, {200.5, 63.0}}
-                              StaticText, 0x1060404a0, {{16.0, 181.0}, {200.5, 20.5}}, label: '② 親Viewのみにidentifier'
-                              Other, 0x1060405c0, {{16.0, 209.5}, {128.0, 34.5}}, identifier: 'idlabel.case2.parent'
-                                StaticText, 0x1060406e0, {{16.0, 216.5}, {16.0, 20.5}}, label: '親'
-                                Button, 0x106040800, {{44.0, 209.5}, {100.0, 34.5}}, label: '子ボタン2'
-                                  StaticText, 0x106040920, {{56.0, 216.5}, {76.0, 20.5}}, label: '子ボタン2'
-                            Other, 0x106040a40, {{16.0, 272.0}, {284.5, 63.0}}
-                              StaticText, 0x106040b60, {{16.0, 272.0}, {284.5, 20.5}}, label: '③ 親View+子Button両方にidentifier'
-                              Other, 0x106040c80, {{16.0, 300.5}, {128.0, 34.5}}, identifier: 'idlabel.case3.parent'
-                                StaticText, 0x10604b2a0, {{16.0, 307.5}, {16.0, 20.5}}, label: '親'
-                                Button, 0x10604b3c0, {{44.0, 300.5}, {100.0, 34.5}}, identifier: 'idlabel.case3.child', label: '子ボタン3'
-                                  StaticText, 0x10604b4e0, {{56.0, 307.5}, {76.0, 20.5}}, label: '子ボタン3'
-                            Other, 0x10604b600, {{16.0, 363.0}, {217.5, 63.0}}
-                              StaticText, 0x10604b720, {{16.0, 363.0}, {217.5, 20.5}}, label: '④ labelのみ（identifierなし）'
-                              Button, 0x10604b840, {{16.0, 391.5}, {100.5, 34.5}}, label: '子ボタン4'
-                                StaticText, 0x10604b960, {{28.0, 398.5}, {76.5, 20.5}}, label: '子ボタン4'
-                            Other, 0x10604ba80, {{16.0, 454.0}, {272.5, 64.5}}
-                              StaticText, 0x10604bba0, {{16.0, 454.0}, {272.5, 20.5}}, label: '⑤ identifierのみ（ラベルなし・図形）'
-                              Button, 0x10604bcc0, {{16.0, 482.5}, {36.0, 36.0}}, identifier: 'idlabel.case5.noLabelButton'
-                                StaticText, 0x10604bde0, {{16.0, 482.5}, {0.0, 0.0}}
-                            Other, 0x10604bf00, {{16.0, 546.5}, {182.5, 63.0}}
-                              StaticText, 0x10604c020, {{16.0, 546.5}, {182.5, 20.5}}, label: '⑥ label + identifier両方'
-                              Button, 0x10604c140, {{16.0, 575.0}, {100.5, 34.5}}, identifier: 'idlabel.case6.button', label: '子ボタン6'
-                                StaticText, 0x10604c260, {{28.0, 582.0}, {76.5, 20.5}}, label: '子ボタン6'
-                          Other, 0x10604c380, {{0.0, 519.2}, {375.0, 147.8}}
-                          Other, 0x10604c4a0, {{0.0, 519.2}, {375.0, 147.8}}
-                            Image, 0x10604c5c0, {{-120.0, 524.0}, {615.0, 286.0}}, identifier: 'AdditionalDimmingOverlay'
-                            Other, 0x10604c6e0, {{0.0, 519.2}, {375.0, 147.8}}
-                              Other, 0x10604c800, {{0.0, 519.2}, {375.0, 147.8}}
-                            Other, 0x10604c920, {{0.0, 519.2}, {375.0, 147.8}}
-                              Other, 0x10604ca40, {{0.0, 519.2}, {375.0, 147.8}}
-                              Other, 0x10604cb60, {{0.0, 519.2}, {375.0, 147.8}}
-                          Other, 0x10604cc80, {{342.0, 74.0}, {30.0, 510.0}}, label: 'Vertical scroll bar, 2 pages', value: 0%
-                            Other, 0x10604cda0, {{369.0, 574.0}, {3.0, 7.0}}
-                          Other, 0x10604cec0, {{0.0, 551.0}, {375.0, 30.0}}, label: 'Horizontal scroll bar, 1 page', value: 0%
-                            Other, 0x10604cfe0, {{365.0, 578.0}, {7.0, 3.0}}
-                          Other, 0x10604d100, {{342.0, 74.0}, {30.0, 510.0}}, label: 'Vertical scroll bar, 2 pages', value: 0%
-                            Other, 0x10604d220, {{369.0, 574.0}, {3.0, 7.0}}
-                          Other, 0x10604d340, {{0.0, 551.0}, {375.0, 30.0}}, label: 'Horizontal scroll bar, 1 page', value: 0%
-                            Other, 0x10604d460, {{365.0, 578.0}, {7.0, 3.0}}
-                  Other, 0x10604d580, {{0.0, 0.0}, {375.0, 667.0}}
-                    Other, 0x10604d6a0, {{0.0, 0.0}, {375.0, 667.0}}
-            Other, 0x10604d7c0, {{0.0, 584.0}, {375.0, 83.0}}
-              Other, 0x10604d8e0, {{0.0, 0.0}, {375.0, 667.0}}
-                TabBar, 0x10604da00, {{0.0, 584.0}, {375.0, 83.0}}, label: 'Tab Bar'
-                  Other, 0x10604db20, {{51.0, 584.0}, {274.0, 62.0}}
-                    Other, 0x10604dc40, {{51.0, 584.0}, {94.0, 54.0}}
-                    Other, 0x10604dd60, {{51.0, 584.0}, {274.0, 62.0}}
-                      Button, 0x10604de80, {{55.0, 588.0}, {94.0, 54.0}}, label: '基本要素'
-                        Image, 0x10604dfa0, {{89.0, 595.5}, {27.0, 25.0}}, identifier: 'square.grid.2x2', label: 'Grid view'
-                      Button, 0x10604e0c0, {{141.0, 588.0}, {94.0, 54.0}}, label: 'ID/Label', Selected
-                        Image, 0x10604e1e0, {{173.0, 594.0}, {30.5, 30.0}}, identifier: 'tag', label: 'tag'
-                      Button, 0x10604e300, {{227.0, 588.0}, {94.0, 54.0}}, label: 'About'
-                        Image, 0x10604e420, {{260.0, 594.0}, {27.5, 27.5}}, identifier: 'info.circle', label: 'info'
-                    Other, 0x10604e540, {{141.0, 588.0}, {94.0, 54.0}}
-                      Other, 0x10604e660, {{141.0, 588.0}, {94.0, 54.0}}
-                        Other, 0x10604e780, {{141.0, 588.0}, {94.0, 54.0}}
-                          Other, 0x10604e8a0, {{141.0, 588.0}, {94.0, 54.0}}
-                        Other, 0x10604e9c0, {{141.0, 588.0}, {94.0, 54.0}}
-                          Other, 0x10604eae0, {{141.0, 588.0}, {94.0, 54.0}}
-                            Other, 0x10604ec00, {{141.0, 588.0}, {94.0, 54.0}}
-                              Other, 0x10604ed20, {{141.0, 588.0}, {94.0, 54.0}}
-                            Other, 0x10604ee40, {{141.0, 588.0}, {94.0, 54.0}}
-                          Other, 0x10604ef60, {{141.0, 588.0}, {94.0, 54.0}}
-              Other, 0x10604f080, {{0.0, 584.0}, {375.0, 83.0}}
-                Other, 0x10604f1a0, {{0.0, 584.0}, {375.0, 83.0}}
-                  Other, 0x10604f2c0, {{0.0, 584.0}, {375.0, 83.0}}
-                    Other, 0x10604f3e0, {{0.0, 584.0}, {375.0, 83.0}}
-                      Other, 0x10604f500, {{0.0, 584.0}, {375.0, 83.0}}
-                        Other, 0x10604f620, {{0.0, 584.0}, {375.0, 83.0}}
-                    Other, 0x10604f740, {{0.0, 584.0}, {375.0, 83.0}}
-                      Other, 0x10604f860, {{0.0, 584.0}, {375.0, 83.0}}
+ →Application, 0x103f27a80, pid: 23931, label: 'A11y UIKit'
+    Window (Main), 0x103f19670, {{0.0, 0.0}, {375.0, 667.0}}
+      Other, 0x103f18e40, {{0.0, 0.0}, {375.0, 667.0}}
+        Other, 0x103f18f60, {{0.0, 0.0}, {375.0, 667.0}}
+          Other, 0x103f19080, {{0.0, 0.0}, {375.0, 667.0}}
+            Other, 0x103f19790, {{0.0, 0.0}, {375.0, 667.0}}
+              Other, 0x103f198b0, {{0.0, 0.0}, {375.0, 667.0}}
+                Other, 0x103f1c0f0, {{0.0, 0.0}, {375.0, 667.0}}
+                  NavigationBar, 0x103f1c210, {{0.0, 20.0}, {375.0, 54.0}}, identifier: 'ID/Label'
+                    StaticText, 0x103f1c330, {{155.0, 31.8}, {65.0, 20.5}}, label: 'ID/Label'
+                  Other, 0x103f1c450, {{0.0, 0.0}, {375.0, 667.0}}
+                    Other, 0x103f1c570, {{0.0, 0.0}, {375.0, 667.0}}
+                      Other, 0x103f1c690, {{0.0, 0.0}, {375.0, 667.0}}
+                        ScrollView, 0x103f1c7b0, {{0.0, 74.0}, {375.0, 593.0}}
+                          Other, 0x103f1c8d0, {{16.0, 90.0}, {343.0, 519.5}}
+                            Other, 0x103f1c9f0, {{16.0, 90.0}, {215.0, 63.0}}
+                              StaticText, 0x103f1cb10, {{16.0, 90.0}, {215.0, 20.5}}, label: '① 子Buttonのみにidentifier'
+                              Other, 0x103f1cc30, {{16.0, 118.5}, {125.5, 34.5}}
+                                StaticText, 0x103f1cd50, {{16.0, 125.5}, {16.0, 20.5}}, label: '親'
+                                Button, 0x103f1ce70, {{44.0, 118.5}, {97.5, 34.5}}, identifier: 'idlabel.case1.child', label: '子ボタン1'
+                                  StaticText, 0x103f1cf90, {{56.0, 125.5}, {73.5, 20.5}}, label: '子ボタン1'
+                            Other, 0x103f1d0b0, {{16.0, 181.0}, {200.5, 63.0}}
+                              StaticText, 0x103f1d1d0, {{16.0, 181.0}, {200.5, 20.5}}, label: '② 親Viewのみにidentifier'
+                              Other, 0x103f1d2f0, {{16.0, 209.5}, {128.0, 34.5}}, identifier: 'idlabel.case2.parent'
+                                StaticText, 0x103f1d410, {{16.0, 216.5}, {16.0, 20.5}}, label: '親'
+                                Button, 0x103f1d530, {{44.0, 209.5}, {100.0, 34.5}}, label: '子ボタン2'
+                                  StaticText, 0x103f1d650, {{56.0, 216.5}, {76.0, 20.5}}, label: '子ボタン2'
+                            Other, 0x103f1d770, {{16.0, 272.0}, {284.5, 63.0}}
+                              StaticText, 0x103f1d890, {{16.0, 272.0}, {284.5, 20.5}}, label: '③ 親View+子Button両方にidentifier'
+                              Other, 0x103f1d9b0, {{16.0, 300.5}, {128.0, 34.5}}, identifier: 'idlabel.case3.parent'
+                                StaticText, 0x103f1dad0, {{16.0, 307.5}, {16.0, 20.5}}, label: '親'
+                                Button, 0x103f1dbf0, {{44.0, 300.5}, {100.0, 34.5}}, identifier: 'idlabel.case3.child', label: '子ボタン3'
+                                  StaticText, 0x103f1dd10, {{56.0, 307.5}, {76.0, 20.5}}, label: '子ボタン3'
+                            Other, 0x103f1de30, {{16.0, 363.0}, {217.5, 63.0}}
+                              StaticText, 0x103f1df50, {{16.0, 363.0}, {217.5, 20.5}}, label: '④ labelのみ（identifierなし）'
+                              Button, 0x103f1e070, {{16.0, 391.5}, {100.5, 34.5}}, label: '子ボタン4'
+                                StaticText, 0x103f1e190, {{28.0, 398.5}, {76.5, 20.5}}, label: '子ボタン4'
+                            Other, 0x103f1e2b0, {{16.0, 454.0}, {272.5, 64.5}}
+                              StaticText, 0x103f1e3d0, {{16.0, 454.0}, {272.5, 20.5}}, label: '⑤ identifierのみ（ラベルなし・図形）'
+                              Button, 0x103f1e4f0, {{16.0, 482.5}, {36.0, 36.0}}, identifier: 'idlabel.case5.noLabelButton'
+                                StaticText, 0x103f1e610, {{16.0, 482.5}, {0.0, 0.0}}
+                            Other, 0x103f1e730, {{16.0, 546.5}, {182.5, 63.0}}
+                              StaticText, 0x103f1e850, {{16.0, 546.5}, {182.5, 20.5}}, label: '⑥ label + identifier両方'
+                              Button, 0x103f1e970, {{16.0, 575.0}, {100.5, 34.5}}, identifier: 'idlabel.case6.button', label: '子ボタン6'
+                                StaticText, 0x103f1ea90, {{28.0, 582.0}, {76.5, 20.5}}, label: '子ボタン6'
+                          Other, 0x103f1ebb0, {{0.0, 519.2}, {375.0, 147.8}}
+                          Other, 0x103f1ecd0, {{0.0, 519.2}, {375.0, 147.8}}
+                            Image, 0x103f1edf0, {{-120.0, 524.0}, {615.0, 286.0}}, identifier: 'AdditionalDimmingOverlay'
+                            Other, 0x103f1ef10, {{0.0, 519.2}, {375.0, 147.8}}
+                              Other, 0x103f1f030, {{0.0, 519.2}, {375.0, 147.8}}
+                            Other, 0x103f1f150, {{0.0, 519.2}, {375.0, 147.8}}
+                              Other, 0x103f1f270, {{0.0, 519.2}, {375.0, 147.8}}
+                              Other, 0x103f1f390, {{0.0, 519.2}, {375.0, 147.8}}
+                          Other, 0x103f1f4b0, {{342.0, 74.0}, {30.0, 510.0}}, label: 'Vertical scroll bar, 2 pages', value: 0%
+                            Other, 0x103f1f5d0, {{369.0, 574.0}, {3.0, 7.0}}
+                          Other, 0x103f1f6f0, {{0.0, 551.0}, {375.0, 30.0}}, label: 'Horizontal scroll bar, 1 page', value: 0%
+                            Other, 0x103f1f810, {{365.0, 578.0}, {7.0, 3.0}}
+                          Other, 0x103f1f930, {{342.0, 74.0}, {30.0, 510.0}}, label: 'Vertical scroll bar, 2 pages', value: 0%
+                            Other, 0x103f1fa50, {{369.0, 574.0}, {3.0, 7.0}}
+                          Other, 0x103f1fb70, {{0.0, 551.0}, {375.0, 30.0}}, label: 'Horizontal scroll bar, 1 page', value: 0%
+                            Other, 0x103f1fc90, {{365.0, 578.0}, {7.0, 3.0}}
+                  Other, 0x103f1fdb0, {{0.0, 0.0}, {375.0, 667.0}}
+                    Other, 0x103f1fed0, {{0.0, 0.0}, {375.0, 667.0}}
+            Other, 0x103f1fff0, {{0.0, 584.0}, {375.0, 83.0}}
+              Other, 0x103f20110, {{0.0, 0.0}, {375.0, 667.0}}
+                TabBar, 0x103f20230, {{0.0, 584.0}, {375.0, 83.0}}, label: 'Tab Bar'
+                  Other, 0x103f20350, {{21.0, 584.0}, {333.0, 62.0}}
+                    Other, 0x103f20470, {{21.0, 584.0}, {88.3, 54.0}}
+                    Other, 0x103f20590, {{21.0, 584.0}, {333.0, 62.0}}
+                      Button, 0x103f206b0, {{25.0, 588.0}, {88.2, 54.0}}, label: '基本要素'
+                        Image, 0x103f207d0, {{56.0, 595.5}, {27.0, 25.0}}, identifier: 'square.grid.2x2', label: 'Grid view'
+                      Button, 0x103f208f0, {{103.9, 588.0}, {88.3, 54.0}}, label: 'ID/Label', Selected
+                        Image, 0x103f20a10, {{132.9, 594.0}, {30.5, 30.0}}, identifier: 'tag', label: 'tag'
+                      Button, 0x103f20b30, {{182.8, 588.0}, {88.3, 54.0}}, label: 'Grouping'
+                        Image, 0x103f20c50, {{207.8, 595.5}, {38.0, 25.0}}, identifier: 'rectangle.3.group', label: 'rectangle.3.group'
+                      Button, 0x103f20d70, {{261.8, 588.0}, {88.2, 54.0}}, label: 'About'
+                        Image, 0x103f20e90, {{291.8, 594.0}, {27.5, 27.5}}, identifier: 'info.circle', label: 'info'
+                    Other, 0x103f20fb0, {{103.9, 588.0}, {88.2, 54.0}}
+                      Other, 0x103f210d0, {{103.9, 588.0}, {88.0, 54.0}}
+                        Other, 0x103f211f0, {{103.9, 588.0}, {88.0, 54.0}}
+                          Other, 0x103f21310, {{103.9, 588.0}, {88.0, 54.0}}
+                        Other, 0x103f21430, {{103.9, 588.0}, {88.0, 54.0}}
+                          Other, 0x103f21550, {{103.9, 588.0}, {88.0, 54.0}}
+                            Other, 0x103f21670, {{103.9, 588.0}, {88.0, 54.0}}
+                              Other, 0x103f21790, {{103.9, 588.0}, {88.0, 54.0}}
+                            Other, 0x103f218b0, {{103.9, 588.0}, {88.0, 54.0}}
+                          Other, 0x103f219d0, {{103.9, 588.0}, {88.0, 54.0}}
+              Other, 0x103f21af0, {{0.0, 584.0}, {375.0, 83.0}}
+                Other, 0x103f21c10, {{0.0, 584.0}, {375.0, 83.0}}
+                  Other, 0x103f21d30, {{0.0, 584.0}, {375.0, 83.0}}
+                    Other, 0x103f21e50, {{0.0, 584.0}, {375.0, 83.0}}
+                      Other, 0x103f21f70, {{0.0, 584.0}, {375.0, 83.0}}
+                        Other, 0x103f22090, {{0.0, 584.0}, {375.0, 83.0}}
+                    Other, 0x103f221b0, {{0.0, 584.0}, {375.0, 83.0}}
+                      Other, 0x103f222d0, {{0.0, 584.0}, {375.0, 83.0}}
 Path to element:
- →Application, 0x10603d360, pid: 98312, label: 'A11y UIKit'
+ →Application, 0x103f27a80, pid: 23931, label: 'A11y UIKit'
 Query chain:
  →Find: Target Application 'com.grandbig.a11ybench.uikit'
   Output: {
-    Application, 0x10604f980, pid: 98312, label: 'A11y UIKit'
+    Application, 0x104217d90, pid: 23931, label: 'A11y UIKit'
   }
 )

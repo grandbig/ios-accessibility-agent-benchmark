@@ -70,5 +70,48 @@ Other, {16,668.5, 343x109.5}, label: 'グループDのまとめ'
 - 共通: **VoiceOver 向けの自然な grouping と、E2E/AI Agent 向けの個別検出性はトレードオフになりうる**。
   複数操作があるなら `.contain`、単一アクションなら `.combine`、と用途で選ぶ。
 
-（UIKit 版の grouping ＝ `isAccessibilityElement` / `accessibilityElements` / `accessibilityContainerType` での
-対比は今後追加予定）
+## SwiftUI vs UIKit: grouping の対比
+
+同じカードを UIKit でも実装（`UIKitApp/GroupingViewController.swift`、検証
+`UIKitAppUITests/UIKitGroupingUITests.swift`、ツリー `docs/trees/uikit-grouping.txt`）。
+SwiftUI の `accessibilityElement(children:)` に対応する UIKit API:
+
+| SwiftUI | UIKit 相当 |
+| -- | -- |
+| `.combine` | `isAccessibilityElement = true` ＋ 連結した `accessibilityLabel`（手動） |
+| `.contain` | `accessibilityContainerType = .semanticGroup` |
+| `.ignore` | `isAccessibilityElement = true` ＋ 独自の `accessibilityLabel` |
+
+### `.contain` ≒ `.semanticGroup`（ほぼ一致）
+どちらも「グループ化しつつ子は個別に検出可能」。操作ボタンは単独・自分のラベルで一意に取れる。
+
+### `.combine` vs `isAccessibilityElement = true`（差が出る）
+
+UIKit（B）のツリー — コンテナが1つの `Other` 要素になり、**子の StaticText は吸収されて消える**:
+```
+Other, {16,298.5, 343x101.5}, label: 'タイトルB, サブタイトルB'   ← 1要素（非インタラクティブ）
+  Button, identifier: 'group.B.button', label: '操作B'           ← 重複なし（1個）
+```
+
+SwiftUI（②）のツリー（再掲）— カード全体が **Button** になり、**操作ボタンの id が重複**:
+```
+Button, identifier: 'group.B.button', label: 'タイトルB, サブタイトルB'   ← Button化
+  StaticText, label: 'タイトルB'                                          ← StaticTextは残る
+  StaticText, label: 'サブタイトルB'
+  Button, identifier: 'group.B.button', label: '操作B'                    ← id 重複（Multiple matches）
+```
+
+| 観点 | SwiftUI `.combine` | UIKit `isAccessibilityElement=true` |
+| -- | -- | -- |
+| まとまった要素の型 | **Button**（中に button があるため） | **Other**（非インタラクティブ） |
+| 連結ラベル | 自動生成（"タイトルB, サブタイトルB"） | **手動で設定が必要** |
+| 子 StaticText | ツリーに残る（ネスト） | **吸収されて消える** |
+| 操作ボタンの id | **重複**（Multiple matches の温床） | 重複しない（1個） |
+
+→ SwiftUI の `.combine` は「自動で連結ラベル」が便利な反面、**Button 化＋ id 重複**という自動操作の落とし穴がある。
+UIKit は手動でラベルを組む手間がある代わりに、**id 重複は起きずツリーがすっきり**する。
+
+### 共通の観察: VoiceOver のフォーカス ≠ XCUITest のツリー
+SwiftUI `.ignore`・UIKit `isAccessibilityElement=true` のいずれでも、VoiceOver は子を無視して
+コンテナのラベルだけを読むが、**操作ボタンは XCUITest のアクセシビリティツリーには残り、検出できた**。
+「VoiceOver から見たツリー」「XCUITest / AI Agent から見たツリー」は別物、という点が一貫して確認できる。

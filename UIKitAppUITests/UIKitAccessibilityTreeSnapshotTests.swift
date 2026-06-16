@@ -38,6 +38,10 @@ final class UIKitAccessibilityTreeSnapshotTests: XCTestCase {
         XCTAssertTrue(app.staticTexts["① 子Buttonのみにidentifier"].waitForExistence(timeout: 2))
         dumpTree(name: "idlabel")
 
+        app.tabBars.buttons["Grouping"].tap()
+        XCTAssertTrue(app.staticTexts["① groupingなし（default）"].waitForExistence(timeout: 2))
+        dumpTree(name: "grouping")
+
         app.tabBars.buttons["About"].tap()
         XCTAssertTrue(app.staticTexts["about.title"].waitForExistence(timeout: 2))
         dumpTree(name: "about")
