@@ -62,4 +62,23 @@ final class IdentifierLabelUITests: XCTestCase {
         XCTAssertEqual(button.label, "子ボタン6")
         XCTAssertTrue(app.buttons["子ボタン6"].exists)
     }
+
+    /// ⑦ 親に accessibilityElement(children: .contain) を付けると、③の上書きが解消される。
+    /// 子は自分の identifier を保持し、親は独立した要素として自分の identifier を持つ（UIKit と同じ構造）。
+    /// Apple Developer Forums で Apple エンジニアが提示した公式の回避策。
+    func testCase7_containPreservesChildIdentifier() {
+        XCTAssertTrue(
+            app.buttons["idlabel.case7.child"].exists,
+            "children: .contain なら子は自分のidentifierを保持するはず"
+        )
+        XCTAssertEqual(app.buttons["idlabel.case7.child"].label, "子ボタン7")
+        XCTAssertFalse(
+            app.buttons["idlabel.case7.parent"].exists,
+            "親idはButtonには乗らない"
+        )
+        XCTAssertTrue(
+            app.otherElements["idlabel.case7.parent"].exists,
+            "親は独立したコンテナ要素として自分のidを持つ"
+        )
+    }
 }

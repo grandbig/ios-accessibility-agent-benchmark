@@ -17,6 +17,7 @@ struct IdentifierLabelView: View {
                     case4
                     case5
                     case6
+                    case7
                 }
                 .padding()
             }
@@ -90,6 +91,21 @@ struct IdentifierLabelView: View {
             Button("子ボタン6") {}
                 .buttonStyle(.bordered)
                 .accessibilityIdentifier("idlabel.case6.button")
+        }
+    }
+
+    // ⑦ 親View + 子Button 両方に identifier だが、親に accessibilityElement(children: .contain) を付与
+    //    Apple Developer Forums で Apple エンジニアが提示した回避策。子の identifier が保持されるはず。
+    private var case7: some View {
+        caseContainer("⑦ 親に accessibilityElement(children: .contain)") {
+            HStack {
+                Text("親")
+                Button("子ボタン7") {}
+                    .buttonStyle(.bordered)
+                    .accessibilityIdentifier("idlabel.case7.child")
+            }
+            .accessibilityElement(children: .contain)
+            .accessibilityIdentifier("idlabel.case7.parent")
         }
     }
 
