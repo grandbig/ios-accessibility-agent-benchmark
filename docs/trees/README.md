@@ -14,6 +14,7 @@ SwiftUI / UIKit 差分の比較は `docs/swiftui-vs-uikit.md` を参照。
 | `*-alert.txt` | アラート表示中 |
 | `*-about.txt` | About タブ |
 | `*-idlabel.txt` | ID/Label 検証画面（SwiftUI / UIKit 両方） |
+| `swiftui-grouping.txt` | Grouping 検証画面（SwiftUI のみ） |
 
 ## 再生成
 

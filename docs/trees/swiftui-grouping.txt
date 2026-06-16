@@ -1,0 +1,97 @@
+Optional(Attributes: Application, 0x104c07f60, pid: 97580, label: 'A11y SwiftUI'
+Element subtree:
+ →Application, 0x104c07f60, pid: 97580, label: 'A11y SwiftUI'
+    Window (Main), 0x104c0ab40, {{0.0, 0.0}, {375.0, 667.0}}
+      Other, 0x104c0a0b0, {{0.0, 0.0}, {375.0, 667.0}}
+        Other, 0x104c0f5e0, {{0.0, 0.0}, {375.0, 667.0}}
+          Other, 0x104c07900, {{0.0, 0.0}, {375.0, 667.0}}
+            Other, 0x104c09410, {{0.0, 0.0}, {375.0, 667.0}}
+              Other, 0x104c0f700, {{0.0, 0.0}, {375.0, 667.0}}
+                Other, 0x104c0f820, {{0.0, 0.0}, {375.0, 667.0}}
+                  Other, 0x104c0f940, {{0.0, 0.0}, {375.0, 667.0}}
+                    Other, 0x104c0fa60, {{0.0, 0.0}, {375.0, 667.0}}
+                      Other, 0x104c0fb80, {{0.0, 0.0}, {375.0, 667.0}}
+                        Other, 0x104c0fca0, {{0.0, 0.0}, {375.0, 667.0}}
+                          Other, 0x104c0fdc0, {{0.0, 0.0}, {375.0, 667.0}}
+                            NavigationBar, 0x104c0fee0, {{0.0, 20.0}, {375.0, 106.0}}, identifier: 'Grouping'
+                              StaticText, 0x104c10000, {{16.0, 77.5}, {147.0, 41.0}}, label: 'Grouping'
+                            Other, 0x104c10120, {{0.0, 0.0}, {375.0, 667.0}}
+                              Other, 0x104c10240, {{0.0, 0.0}, {375.0, 667.0}}
+                                Other, 0x104c10360, {{0.0, 0.0}, {375.0, 667.0}}
+                                  Other, 0x104c10480, {{0.0, 0.0}, {375.0, 667.0}}
+                                    ScrollView, 0x104c105a0, {{0.0, 0.0}, {375.0, 667.0}}
+                                      Other, 0x104c106c0, {{0.0, 0.0}, {375.0, 128.8}}
+                                      Other, 0x104c107e0, {{0.0, 126.0}, {375.0, 668.0}}
+                                        StaticText, 0x104c10900, {{16.0, 142.0}, {201.5, 20.5}}, label: '① groupingなし（default）'
+                                        StaticText, 0x104c10a20, {{32.0, 186.5}, {75.5, 20.5}}, label: 'タイトルA'
+                                        StaticText, 0x104c10b40, {{32.0, 211.0}, {75.5, 14.5}}, label: 'サブタイトルA'
+                                        Button, 0x104c10c60, {{32.0, 229.5}, {67.0, 34.5}}, identifier: 'group.A.button', label: '操作A'
+                                        StaticText, 0x104c10d80, {{16.0, 308.0}, {93.5, 20.5}}, label: '② .combine'
+                                        Button, 0x104c10ea0, {{16.0, 336.5}, {343.0, 109.5}}, identifier: 'group.B.button', label: 'タイトルB, サブタイトルB'
+                                          StaticText, 0x104c10fc0, {{32.0, 352.5}, {75.0, 20.5}}, label: 'タイトルB'
+                                          StaticText, 0x104c110e0, {{32.0, 377.0}, {75.5, 14.5}}, label: 'サブタイトルB'
+                                          Button, 0x104c11200, {{32.0, 395.5}, {67.0, 34.5}}, identifier: 'group.B.button', label: '操作B'
+                                        StaticText, 0x104c11320, {{16.0, 474.0}, {84.0, 20.5}}, label: '③ .contain'
+                                        Other, 0x104c11440, {{16.0, 502.5}, {343.0, 109.5}}
+                                          StaticText, 0x104c11560, {{32.0, 518.5}, {76.0, 20.5}}, label: 'タイトルC'
+                                          StaticText, 0x104c11680, {{32.0, 543.0}, {76.0, 14.5}}, label: 'サブタイトルC'
+                                          Button, 0x104c117a0, {{32.0, 561.5}, {68.0, 34.5}}, identifier: 'group.C.button', label: '操作C'
+                                        StaticText, 0x104c118c0, {{16.0, 640.0}, {190.0, 20.5}}, label: '④ .ignore（+ 独自ラベル）'
+                                        Other, 0x104c119e0, {{16.0, 668.5}, {343.0, 109.5}}, label: 'グループDのまとめ'
+                                          StaticText, 0x104c11b00, {{32.0, 684.5}, {76.0, 20.5}}, label: 'タイトルD'
+                                          StaticText, 0x104c11c20, {{32.0, 709.0}, {76.5, 14.5}}, label: 'サブタイトルD'
+                                          Button, 0x104c11d40, {{32.0, 727.5}, {68.0, 34.5}}, identifier: 'group.D.button', label: '操作D'
+                                      Other, 0x104c11e60, {{0.0, 519.2}, {375.0, 147.8}}
+                                      Other, 0x104c11f80, {{0.0, 519.2}, {375.0, 147.8}}
+                                        Image, 0x104c120a0, {{-120.0, 524.0}, {615.0, 286.0}}, identifier: 'AdditionalDimmingOverlay'
+                                        Other, 0x104c121c0, {{0.0, 519.2}, {375.0, 147.8}}
+                                          Other, 0x104c122e0, {{0.0, 519.2}, {375.0, 147.8}}
+                                        Other, 0x104c12400, {{0.0, 519.2}, {375.0, 147.8}}
+                                          Other, 0x104c12520, {{0.0, 519.2}, {375.0, 147.8}}
+                                          Other, 0x104c12640, {{0.0, 519.2}, {375.0, 147.8}}
+                                      Other, 0x104c12760, {{342.0, 74.0}, {30.0, 510.0}}, label: 'Vertical scroll bar, 2 pages', value: 0%
+                                        Other, 0x104c12880, {{369.0, 77.0}, {3.0, 383.5}}
+                                      Other, 0x104c129a0, {{342.0, 74.0}, {30.0, 510.0}}, label: 'Vertical scroll bar, 2 pages', value: 0%
+                                        Other, 0x104c12ac0, {{369.0, 77.0}, {3.0, 383.5}}
+                            Other, 0x104c12be0, {{0.0, 0.0}, {375.0, 667.0}}
+                              Other, 0x104c12d00, {{0.0, 0.0}, {375.0, 667.0}}
+                Other, 0x104c12e20, {{0.0, 584.0}, {375.0, 83.0}}
+                  Other, 0x104c12f40, {{0.0, 0.0}, {375.0, 667.0}}
+                    TabBar, 0x104c13060, {{0.0, 584.0}, {375.0, 83.0}}, label: 'Tab Bar'
+                      Other, 0x104c13180, {{21.0, 584.0}, {333.0, 62.0}}
+                        Other, 0x104c132a0, {{21.0, 584.0}, {88.2, 54.0}}
+                        Other, 0x104c133c0, {{21.0, 584.0}, {333.0, 62.0}}
+                          Button, 0x104c134e0, {{25.0, 588.0}, {88.2, 54.0}}, identifier: 'square.grid.2x2', label: '基本要素'
+                            Image, 0x104c13600, {{56.0, 595.5}, {27.0, 25.0}}, identifier: 'square.grid.2x2.fill', label: 'grid 2x2'
+                          Button, 0x104c13720, {{103.9, 588.0}, {88.3, 54.0}}, identifier: 'tag', label: 'ID/Label'
+                            Image, 0x104c13840, {{132.9, 594.0}, {30.5, 30.0}}, identifier: 'tag.fill', label: 'tag'
+                          Button, 0x104c13960, {{182.8, 588.0}, {88.3, 54.0}}, identifier: 'rectangle.3.group', label: 'Grouping', Selected
+                            Image, 0x104c13a80, {{207.8, 595.5}, {37.5, 25.0}}, identifier: 'rectangle.3.group.fill', label: 'rectangle.3.group.fill'
+                          Button, 0x104c13ba0, {{261.8, 588.0}, {88.2, 54.0}}, identifier: 'info.circle', label: 'About'
+                            Image, 0x104c13cc0, {{291.8, 594.0}, {27.5, 27.5}}, identifier: 'info.circle.fill', label: 'info'
+                        Other, 0x104c13de0, {{182.8, 588.0}, {88.3, 54.0}}
+                          Other, 0x104c13f00, {{182.8, 588.0}, {88.0, 54.0}}
+                            Other, 0x104c14020, {{182.8, 588.0}, {88.0, 54.0}}
+                              Other, 0x104c14140, {{182.8, 588.0}, {88.0, 54.0}}
+                            Other, 0x104c14260, {{182.8, 588.0}, {88.0, 54.0}}
+                              Other, 0x104c14380, {{182.8, 588.0}, {88.0, 54.0}}
+                                Other, 0x104c144a0, {{182.8, 588.0}, {88.0, 54.0}}
+                                  Other, 0x104c145c0, {{182.8, 588.0}, {88.0, 54.0}}
+                                Other, 0x104c146e0, {{182.8, 588.0}, {88.0, 54.0}}
+                              Other, 0x104c14800, {{182.8, 588.0}, {88.0, 54.0}}
+                  Other, 0x104c14920, {{0.0, 584.0}, {375.0, 83.0}}
+                    Other, 0x104c14a40, {{0.0, 584.0}, {375.0, 83.0}}
+                      Other, 0x104c14b60, {{0.0, 584.0}, {375.0, 83.0}}
+                        Other, 0x104c14c80, {{0.0, 584.0}, {375.0, 83.0}}
+                          Other, 0x104c14da0, {{0.0, 584.0}, {375.0, 83.0}}
+                            Other, 0x104c14ec0, {{0.0, 584.0}, {375.0, 83.0}}
+                        Other, 0x104c14fe0, {{0.0, 584.0}, {375.0, 83.0}}
+                          Other, 0x104c15100, {{0.0, 584.0}, {375.0, 83.0}}
+Path to element:
+ →Application, 0x104c07f60, pid: 97580, label: 'A11y SwiftUI'
+Query chain:
+ →Find: Target Application 'com.grandbig.a11ybench.swiftui'
+  Output: {
+    Application, 0x104d1cc20, pid: 97580, label: 'A11y SwiftUI'
+  }
+)

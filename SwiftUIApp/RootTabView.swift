@@ -18,6 +18,11 @@ struct RootTabView: View {
                     Label("ID/Label", systemImage: "tag")
                 }
 
+            GroupingView()
+                .tabItem {
+                    Label("Grouping", systemImage: "rectangle.3.group")
+                }
+
             AboutView()
                 .tabItem {
                     Label("About", systemImage: "info.circle")

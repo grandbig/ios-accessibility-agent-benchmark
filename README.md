@@ -16,6 +16,7 @@ VoiceOver・XCUITest・Maestro・agent-device（AI Agent）の認識・自動操
 - `docs/xcuitest-baseline.md` — 基準値（基本要素の検出/操作）と Toggle の知見
 - `docs/swiftui-vs-uikit.md` — 同一 UI の SwiftUI / UIKit 差分
 - `docs/identifier-label.md` — identifier/label の付け方の検証（親子の identifier 干渉ほか）
+- `docs/grouping.md` — `accessibilityElement(children:)`（combine/contain/ignore）と VoiceOver↔自動操作のトレードオフ
 
 `.xcodeproj` は [XcodeGen](https://github.com/yonaskolb/XcodeGen) で `project.yml` から生成する（git 管理対象外）。
 
