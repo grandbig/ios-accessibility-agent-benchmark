@@ -1,0 +1,91 @@
+Optional(Attributes: Application, 0x102018ae0, pid: 96430, label: 'A11y SwiftUI'
+Element subtree:
+ →Application, 0x102018ae0, pid: 96430, label: 'A11y SwiftUI'
+    Window (Main), 0x1020173a0, {{0.0, 0.0}, {375.0, 667.0}}
+      Other, 0x102019c80, {{0.0, 0.0}, {375.0, 667.0}}
+        Other, 0x102019da0, {{0.0, 0.0}, {375.0, 667.0}}
+          Other, 0x1020199e0, {{0.0, 0.0}, {375.0, 667.0}}
+            Other, 0x102019b00, {{0.0, 0.0}, {375.0, 667.0}}
+              Other, 0x102019ec0, {{0.0, 0.0}, {375.0, 667.0}}
+                Other, 0x102019fe0, {{0.0, 0.0}, {375.0, 667.0}}
+                  Other, 0x10201a100, {{0.0, 0.0}, {375.0, 667.0}}
+                    Other, 0x10201a220, {{0.0, 0.0}, {375.0, 667.0}}
+                      Other, 0x10201a340, {{0.0, 0.0}, {375.0, 667.0}}
+                        Other, 0x10201a460, {{0.0, 0.0}, {375.0, 667.0}}
+                          Other, 0x10201a580, {{0.0, 0.0}, {375.0, 667.0}}
+                            NavigationBar, 0x10201a6a0, {{0.0, 20.0}, {375.0, 106.0}}, identifier: 'ID/Label'
+                              StaticText, 0x10201a7c0, {{16.0, 77.5}, {130.0, 41.0}}, label: 'ID/Label'
+                            Other, 0x10201a8e0, {{0.0, 0.0}, {375.0, 667.0}}
+                              Other, 0x10201aa00, {{0.0, 0.0}, {375.0, 667.0}}
+                                Other, 0x10201ab20, {{0.0, 0.0}, {375.0, 667.0}}
+                                  Other, 0x10201ac40, {{0.0, 0.0}, {375.0, 667.0}}
+                                    ScrollView, 0x10201ad60, {{29.5, 0.0}, {316.5, 667.0}}
+                                      Other, 0x10201ae80, {{29.5, 0.0}, {316.5, 128.8}}
+                                      Other, 0x10201afa0, {{29.5, 126.0}, {316.5, 553.5}}
+                                        StaticText, 0x10201b0c0, {{45.5, 142.0}, {215.0, 20.5}}, label: '① 子Buttonのみにidentifier'
+                                        StaticText, 0x10201b1e0, {{45.5, 177.5}, {16.0, 20.5}}, label: '親'
+                                        Button, 0x10201b300, {{69.5, 170.5}, {95.5, 34.5}}, identifier: 'idlabel.case1.child', label: '子ボタン1'
+                                        StaticText, 0x10201b420, {{45.5, 233.0}, {200.5, 20.5}}, label: '② 親Viewのみにidentifier'
+                                        StaticText, 0x10201b540, {{45.5, 268.5}, {16.0, 20.5}}, identifier: 'idlabel.case2.parent', label: '親'
+                                        Button, 0x10201b660, {{69.5, 261.5}, {97.5, 34.5}}, identifier: 'idlabel.case2.parent', label: '子ボタン2'
+                                        StaticText, 0x10201b780, {{45.5, 324.0}, {284.5, 20.5}}, label: '③ 親View+子Button両方にidentifier'
+                                        StaticText, 0x10201b8a0, {{45.5, 359.5}, {16.0, 20.5}}, identifier: 'idlabel.case3.parent', label: '親'
+                                        Button, 0x10201b9c0, {{69.5, 352.5}, {98.0, 34.5}}, identifier: 'idlabel.case3.parent', label: '子ボタン3'
+                                        StaticText, 0x10201bae0, {{45.5, 415.0}, {217.5, 20.5}}, label: '④ labelのみ（identifierなし）'
+                                        Button, 0x10201bc00, {{45.5, 443.5}, {98.5, 34.5}}, label: '子ボタン4'
+                                        StaticText, 0x10201bd20, {{45.5, 506.0}, {272.5, 20.5}}, label: '⑤ identifierのみ（ラベルなし・図形）'
+                                        Button, 0x10201be40, {{45.5, 534.5}, {48.0, 38.0}}, identifier: 'idlabel.case5.noLabelButton'
+                                        StaticText, 0x10201bf60, {{45.5, 600.5}, {182.5, 20.5}}, label: '⑥ label + identifier両方'
+                                        Button, 0x10201c080, {{45.5, 629.0}, {98.5, 34.5}}, identifier: 'idlabel.case6.button', label: '子ボタン6'
+                                      Other, 0x10201c1a0, {{29.5, 519.2}, {316.5, 147.8}}
+                                      Other, 0x10201c2c0, {{29.5, 519.2}, {316.5, 147.8}}
+                                        Image, 0x10201c3e0, {{-90.5, 524.0}, {556.5, 286.0}}, identifier: 'AdditionalDimmingOverlay'
+                                        Other, 0x10201c500, {{29.5, 519.2}, {316.5, 147.8}}
+                                          Other, 0x10201c620, {{29.5, 519.2}, {316.5, 147.8}}
+                                        Other, 0x10201c740, {{29.5, 519.2}, {316.5, 147.8}}
+                                          Other, 0x10201c860, {{29.5, 519.2}, {316.5, 147.8}}
+                                          Other, 0x10201c980, {{29.5, 519.2}, {316.5, 147.8}}
+                                      Other, 0x10201caa0, {{313.0, 74.0}, {30.0, 510.0}}, label: 'Vertical scroll bar, 2 pages', value: 0%
+                                        Other, 0x10201cbc0, {{340.0, 77.0}, {3.0, 441.0}}
+                                      Other, 0x10201cce0, {{313.0, 74.0}, {30.0, 510.0}}, label: 'Vertical scroll bar, 2 pages', value: 0%
+                                        Other, 0x10201ce00, {{340.0, 77.0}, {3.0, 441.0}}
+                            Other, 0x10201cf20, {{0.0, 0.0}, {375.0, 667.0}}
+                              Other, 0x10201d040, {{0.0, 0.0}, {375.0, 667.0}}
+                Other, 0x10201d160, {{0.0, 584.0}, {375.0, 83.0}}
+                  Other, 0x10201d280, {{0.0, 0.0}, {375.0, 667.0}}
+                    TabBar, 0x10201d3a0, {{0.0, 584.0}, {375.0, 83.0}}, label: 'Tab Bar'
+                      Other, 0x10201d4c0, {{51.0, 584.0}, {274.0, 62.0}}
+                        Other, 0x10201d5e0, {{51.0, 584.0}, {94.0, 54.0}}
+                        Other, 0x10201d700, {{51.0, 584.0}, {274.0, 62.0}}
+                          Button, 0x10201d820, {{55.0, 588.0}, {94.0, 54.0}}, identifier: 'square.grid.2x2', label: '基本要素'
+                            Image, 0x10201d940, {{89.0, 595.5}, {27.0, 25.0}}, identifier: 'square.grid.2x2.fill', label: 'grid 2x2'
+                          Button, 0x10201da60, {{141.0, 588.0}, {94.0, 54.0}}, identifier: 'tag', label: 'ID/Label', Selected
+                            Image, 0x10201db80, {{173.0, 594.0}, {30.5, 30.0}}, identifier: 'tag.fill', label: 'tag'
+                          Button, 0x10201dca0, {{227.0, 588.0}, {94.0, 54.0}}, identifier: 'info.circle', label: 'About'
+                            Image, 0x10201ddc0, {{260.0, 594.0}, {27.5, 27.5}}, identifier: 'info.circle.fill', label: 'info'
+                        Other, 0x10201dee0, {{141.0, 588.0}, {94.0, 54.0}}
+                          Other, 0x10201e000, {{141.0, 588.0}, {94.0, 54.0}}
+                            Other, 0x10201e120, {{141.0, 588.0}, {94.0, 54.0}}
+                              Other, 0x10201e240, {{141.0, 588.0}, {94.0, 54.0}}
+                            Other, 0x10201e360, {{141.0, 588.0}, {94.0, 54.0}}
+                              Other, 0x10201e480, {{141.0, 588.0}, {94.0, 54.0}}
+                                Other, 0x10201e5a0, {{141.0, 588.0}, {94.0, 54.0}}
+                                  Other, 0x10201e6c0, {{141.0, 588.0}, {94.0, 54.0}}
+                                Other, 0x10201e7e0, {{141.0, 588.0}, {94.0, 54.0}}
+                              Other, 0x10201e900, {{141.0, 588.0}, {94.0, 54.0}}
+                  Other, 0x10201ea20, {{0.0, 584.0}, {375.0, 83.0}}
+                    Other, 0x10201eb40, {{0.0, 584.0}, {375.0, 83.0}}
+                      Other, 0x10201ec60, {{0.0, 584.0}, {375.0, 83.0}}
+                        Other, 0x10201ed80, {{0.0, 584.0}, {375.0, 83.0}}
+                          Other, 0x10201eea0, {{0.0, 584.0}, {375.0, 83.0}}
+                            Other, 0x10201efc0, {{0.0, 584.0}, {375.0, 83.0}}
+                        Other, 0x10201f0e0, {{0.0, 584.0}, {375.0, 83.0}}
+                          Other, 0x10201f200, {{0.0, 584.0}, {375.0, 83.0}}
+Path to element:
+ →Application, 0x102018ae0, pid: 96430, label: 'A11y SwiftUI'
+Query chain:
+ →Find: Target Application 'com.grandbig.a11ybench.swiftui'
+  Output: {
+    Application, 0x10261d380, pid: 96430, label: 'A11y SwiftUI'
+  }
+)

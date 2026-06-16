@@ -44,6 +44,11 @@ final class AccessibilityTreeSnapshotTests: XCTestCase {
         dumpTree(name: "alert")
         app.alerts.buttons["OK"].firstMatch.tap()
 
+        // ID/Label 検証画面
+        app.tabBars.buttons["ID/Label"].tap()
+        XCTAssertTrue(app.staticTexts["① 子Buttonのみにidentifier"].waitForExistence(timeout: 2))
+        dumpTree(name: "idlabel")
+
         // About タブ
         app.tabBars.buttons["About"].tap()
         XCTAssertTrue(app.staticTexts["about.title"].waitForExistence(timeout: 2))

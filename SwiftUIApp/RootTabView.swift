@@ -13,6 +13,11 @@ struct RootTabView: View {
                     Label("基本要素", systemImage: "square.grid.2x2")
                 }
 
+            IdentifierLabelView()
+                .tabItem {
+                    Label("ID/Label", systemImage: "tag")
+                }
+
             AboutView()
                 .tabItem {
                     Label("About", systemImage: "info.circle")
