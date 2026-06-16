@@ -16,8 +16,11 @@
 - **Maestro / agent-device**: 見出し級のケース（Toggle、identifier 上書き、装飾UI）を直接計測し、
   XCUITest と結論一致を確認済み。それ以外のセルは「3ツールとも同一のアクセシビリティツリーに依存し、
   計測した範囲ですべて一致した」ことから同等と判断（＝ツリー由来の挙動は一致する、というのが本検証の結論）。
-- **VoiceOver**: アクセシビリティツリーの label / trait / grouping から推定（実機読み上げ順序は未計測）。
-  ラベル・ロール・要素化の有無は実測値に基づく。
+- **VoiceOver**: **実測**。Apple 公式の `performAccessibilityAudit()`（`.sufficientElementDescription`＝
+  説明欠落の検出）＋ 各要素の role / label / value（VoiceOver の読み上げ内容）で計測
+  （`docs/voiceover.md`、`SwiftUIAppUITests/VoiceOverAuditTests.swift`）。監査は **case5（id のみ）と
+  装飾UIの無a11y版のみを説明欠落と判定**し、事前分析と一致。なお実機 VoiceOver の読み上げ**順序**の
+  細部は未計測（スライド用に別途録画予定）。
 
 ## 比較表（SwiftUI 基準）
 
@@ -72,5 +75,6 @@
 - `docs/grouping.md` — `.combine`/`.contain`/`.ignore`
 - `docs/decorative.md` — 装飾UI / カスタム描画
 - `docs/swiftui-vs-uikit.md` — SwiftUI/UIKit 差分
+- `docs/voiceover.md` — VoiceOver の実測（公式監査＋読み上げ内容）
 - `docs/maestro.md` / `docs/agent-device.md` — ツール別の視点
 - `docs/trees/` — 各画面のアクセシビリティツリー実測
