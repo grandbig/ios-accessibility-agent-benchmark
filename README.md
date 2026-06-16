@@ -13,6 +13,7 @@ VoiceOver・XCUITest・Maestro・agent-device（AI Agent）の認識・自動操
 | `SwiftUIAppUITests` / `UIKitAppUITests` | 各アプリの基準値 XCUITest |
 
 検証ドキュメント:
+- **`docs/summary.md` — 総合比較表（UI設計 × VoiceOver/XCUITest/Maestro/agent-device の ◎○△×）**
 - `docs/xcuitest-baseline.md` — 基準値（基本要素の検出/操作）と Toggle の知見
 - `docs/swiftui-vs-uikit.md` — 同一 UI の SwiftUI / UIKit 差分
 - `docs/identifier-label.md` — identifier/label の付け方の検証（親子の identifier 干渉ほか）
