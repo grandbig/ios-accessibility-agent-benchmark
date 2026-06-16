@@ -37,15 +37,22 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
             tag: 2
         )
 
+        let decorative = UINavigationController(rootViewController: DecorativeViewController())
+        decorative.tabBarItem = UITabBarItem(
+            title: "Decorative",
+            image: UIImage(systemName: "paintbrush"),
+            tag: 3
+        )
+
         let about = UINavigationController(rootViewController: AboutViewController())
         about.tabBarItem = UITabBarItem(
             title: "About",
             image: UIImage(systemName: "info.circle"),
-            tag: 3
+            tag: 4
         )
 
         let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [basics, idLabel, grouping, about]
+        tabBarController.viewControllers = [basics, idLabel, grouping, decorative, about]
         return tabBarController
     }
 }

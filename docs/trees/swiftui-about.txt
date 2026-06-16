@@ -1,86 +1,86 @@
-Optional(Attributes: Application, 0x11202c580, pid: 36445, label: 'A11y SwiftUI'
+Optional(Attributes: Application, 0x10fb1ab90, pid: 83468, label: 'A11y SwiftUI'
 Element subtree:
- →Application, 0x11202c580, pid: 36445, label: 'A11y SwiftUI'
-    Window (Main), 0x11202daf0, {{0.0, 0.0}, {375.0, 667.0}}
-      Other, 0x112030040, {{0.0, 0.0}, {375.0, 667.0}}
-        Other, 0x112030160, {{0.0, 0.0}, {375.0, 667.0}}
-          Other, 0x11202fef0, {{0.0, 0.0}, {375.0, 667.0}}
-            Other, 0x112029870, {{0.0, 0.0}, {375.0, 667.0}}
-              Other, 0x112030280, {{0.0, 0.0}, {375.0, 667.0}}
-                Other, 0x1120303a0, {{0.0, 0.0}, {375.0, 667.0}}
-                  Other, 0x1120304c0, {{0.0, 0.0}, {375.0, 667.0}}
-                    Other, 0x1120305e0, {{0.0, 0.0}, {375.0, 667.0}}
-                      Other, 0x112030700, {{0.0, 0.0}, {375.0, 667.0}}
-                        Other, 0x112030820, {{0.0, 0.0}, {375.0, 667.0}}
-                          Other, 0x112030940, {{0.0, 0.0}, {375.0, 667.0}}
-                            NavigationBar, 0x112030a60, {{0.0, 20.0}, {375.0, 106.0}}, identifier: 'About'
-                              StaticText, 0x112030b80, {{16.0, 77.5}, {97.0, 41.0}}, label: 'About'
-                            Other, 0x112030ca0, {{0.0, 0.0}, {375.0, 667.0}}
-                              Other, 0x112030dc0, {{0.0, 0.0}, {375.0, 667.0}}
-                                Other, 0x112030ee0, {{0.0, 0.0}, {375.0, 667.0}}
-                                  Other, 0x112031000, {{0.0, 0.0}, {375.0, 667.0}}
-                                    CollectionView, 0x112031120, {{0.0, 0.0}, {375.0, 667.0}}
-                                      Other, 0x112031240, {{-16.0, -1208.0}, {407.0, 2793.0}}
-                                      Cell, 0x112031360, {{16.0, 126.0}, {343.0, 52.5}}
-                                        Other, 0x112031480, {{16.0, 126.0}, {343.0, 52.5}}
-                                          Other, 0x1120315a0, {{16.0, 126.0}, {343.0, 52.5}}
-                                        Other, 0x1120316c0, {{16.0, 126.0}, {343.0, 52.5}}
-                                          Other, 0x1120317e0, {{16.0, 126.0}, {343.0, 52.5}}
-                                            Other, 0x112031900, {{16.0, 126.0}, {343.0, 52.5}}
-                                              StaticText, 0x112031a20, {{16.0, 126.0}, {343.0, 52.5}}, identifier: 'about.title', label: 'iOS Accessibility × Agent Benchmark'
-                                      Cell, 0x112031b40, {{16.0, 178.5}, {343.0, 52.5}}
-                                        Other, 0x112031c60, {{16.0, 178.5}, {343.0, 52.5}}
-                                          Other, 0x112031d80, {{16.0, 178.5}, {343.0, 52.5}}
-                                        Other, 0x112031ea0, {{16.0, 178.5}, {343.0, 52.5}}
-                                          Other, 0x112031fc0, {{16.0, 178.5}, {343.0, 52.5}}
-                                            Other, 0x1120320e0, {{16.0, 178.5}, {343.0, 52.5}}
-                                              StaticText, 0x112032200, {{16.0, 178.5}, {343.0, 52.5}}, identifier: 'about.subtitle', label: '基本要素の基準値画面（SwiftUI）'
-                                      Other, 0x112032320, {{32.0, 177.5}, {311.0, 1.0}}
-                                      Other, 0x112032440, {{342.0, 126.0}, {30.0, 458.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
-                                        Other, 0x112032560, {{369.0, 574.0}, {3.0, 7.0}}
-                                      Other, 0x112032680, {{342.0, 126.0}, {30.0, 458.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
-                                        Other, 0x1120327a0, {{369.0, 574.0}, {3.0, 7.0}}
-                            Other, 0x1120328c0, {{0.0, 0.0}, {375.0, 667.0}}
-                              Other, 0x1120329e0, {{0.0, 0.0}, {375.0, 667.0}}
-                Other, 0x112032b00, {{0.0, 584.0}, {375.0, 83.0}}
-                  Other, 0x112032c20, {{0.0, 0.0}, {375.0, 667.0}}
-                    TabBar, 0x112032d40, {{0.0, 584.0}, {375.0, 83.0}}, label: 'Tab Bar'
-                      Other, 0x112032e60, {{21.0, 584.0}, {333.0, 62.0}}
-                        Other, 0x112032f80, {{21.0, 584.0}, {74.0, 54.0}}
-                        Other, 0x1120330a0, {{21.0, 584.0}, {333.0, 62.0}}
-                          Button, 0x1120331c0, {{25.0, 588.0}, {74.0, 54.0}}, identifier: 'square.grid.2x2', label: '基本要素'
-                            Image, 0x1120332e0, {{49.0, 595.5}, {27.0, 25.0}}, identifier: 'square.grid.2x2.fill', label: 'grid 2x2'
-                          Button, 0x112033400, {{84.0, 588.0}, {74.0, 54.0}}, identifier: 'tag', label: 'ID/Label'
-                            Image, 0x112033520, {{106.0, 594.0}, {30.5, 30.0}}, identifier: 'tag.fill', label: 'tag'
-                          Button, 0x112033640, {{143.0, 588.0}, {77.5, 54.0}}, identifier: 'rectangle.3.group', label: 'Grouping'
-                            Image, 0x112033760, {{163.0, 595.5}, {37.5, 25.0}}, identifier: 'rectangle.3.group.fill', label: 'rectangle.3.group.fill'
-                          Button, 0x112033880, {{205.5, 588.0}, {85.5, 54.0}}, identifier: 'paintbrush', label: 'Decorative'
-                            Image, 0x1120339a0, {{233.5, 592.0}, {29.5, 32.0}}, identifier: 'paintbrush.fill', label: 'format'
-                          Button, 0x112033ac0, {{276.0, 588.0}, {74.0, 54.0}}, identifier: 'info.circle', label: 'About', Selected
-                            Image, 0x112033be0, {{299.0, 594.0}, {27.5, 27.5}}, identifier: 'info.circle.fill', label: 'info'
-                        Other, 0x112033d00, {{276.0, 588.0}, {74.0, 54.0}}
-                          Other, 0x112033e20, {{276.0, 588.0}, {74.0, 54.0}}
-                            Other, 0x112033f40, {{276.0, 588.0}, {74.0, 54.0}}
-                              Other, 0x112034060, {{276.0, 588.0}, {74.0, 54.0}}
-                            Other, 0x112034d10, {{276.0, 588.0}, {74.0, 54.0}}
-                              Other, 0x112034e30, {{276.0, 588.0}, {74.0, 54.0}}
-                                Other, 0x112034f50, {{276.0, 588.0}, {74.0, 54.0}}
-                                  Other, 0x112035070, {{276.0, 588.0}, {74.0, 54.0}}
-                                Other, 0x112035190, {{276.0, 588.0}, {74.0, 54.0}}
-                              Other, 0x1120352b0, {{276.0, 588.0}, {74.0, 54.0}}
-                  Other, 0x1120353d0, {{0.0, 584.0}, {375.0, 83.0}}
-                    Other, 0x1120354f0, {{0.0, 584.0}, {375.0, 83.0}}
-                      Other, 0x112035610, {{0.0, 584.0}, {375.0, 83.0}}
-                        Other, 0x112035730, {{0.0, 584.0}, {375.0, 83.0}}
-                          Other, 0x112035850, {{0.0, 584.0}, {375.0, 83.0}}
-                            Other, 0x112035970, {{0.0, 584.0}, {375.0, 83.0}}
-                        Other, 0x112035a90, {{0.0, 584.0}, {375.0, 83.0}}
-                          Other, 0x112035bb0, {{0.0, 584.0}, {375.0, 83.0}}
+ →Application, 0x10fb1ab90, pid: 83468, label: 'A11y SwiftUI'
+    Window (Main), 0x10fb1bfd0, {{0.0, 0.0}, {375.0, 667.0}}
+      Other, 0x10fb1c390, {{0.0, 0.0}, {375.0, 667.0}}
+        Other, 0x10fb1c4b0, {{0.0, 0.0}, {375.0, 667.0}}
+          Other, 0x10fb1c0f0, {{0.0, 0.0}, {375.0, 667.0}}
+            Other, 0x10fb1c210, {{0.0, 0.0}, {375.0, 667.0}}
+              Other, 0x10fb1c5d0, {{0.0, 0.0}, {375.0, 667.0}}
+                Other, 0x10fb1c6f0, {{0.0, 0.0}, {375.0, 667.0}}
+                  Other, 0x10fb1c810, {{0.0, 0.0}, {375.0, 667.0}}
+                    Other, 0x10fb1c930, {{0.0, 0.0}, {375.0, 667.0}}
+                      Other, 0x10fb1ca50, {{0.0, 0.0}, {375.0, 667.0}}
+                        Other, 0x10fb1cb70, {{0.0, 0.0}, {375.0, 667.0}}
+                          Other, 0x10fb1cc90, {{0.0, 0.0}, {375.0, 667.0}}
+                            NavigationBar, 0x10fb1cdb0, {{0.0, 20.0}, {375.0, 106.0}}, identifier: 'About'
+                              StaticText, 0x10fb1ced0, {{16.0, 77.5}, {97.0, 41.0}}, label: 'About'
+                            Other, 0x10fb1cff0, {{0.0, 0.0}, {375.0, 667.0}}
+                              Other, 0x10fb1d110, {{0.0, 0.0}, {375.0, 667.0}}
+                                Other, 0x10fb1d230, {{0.0, 0.0}, {375.0, 667.0}}
+                                  Other, 0x10fb1d350, {{0.0, 0.0}, {375.0, 667.0}}
+                                    CollectionView, 0x10fb1d470, {{0.0, 0.0}, {375.0, 667.0}}
+                                      Other, 0x10fb1d590, {{-16.0, -1208.0}, {407.0, 2793.0}}
+                                      Cell, 0x10fb1d6b0, {{16.0, 126.0}, {343.0, 52.5}}
+                                        Other, 0x10fb1d7d0, {{16.0, 126.0}, {343.0, 52.5}}
+                                          Other, 0x10fb1d8f0, {{16.0, 126.0}, {343.0, 52.5}}
+                                        Other, 0x10fb1da10, {{16.0, 126.0}, {343.0, 52.5}}
+                                          Other, 0x10fb1db30, {{16.0, 126.0}, {343.0, 52.5}}
+                                            Other, 0x10fb1dc50, {{16.0, 126.0}, {343.0, 52.5}}
+                                              StaticText, 0x10fb1dd70, {{16.0, 126.0}, {343.0, 52.5}}, identifier: 'about.title', label: 'iOS Accessibility × Agent Benchmark'
+                                      Cell, 0x10fb1de90, {{16.0, 178.5}, {343.0, 52.5}}
+                                        Other, 0x10fb1dfb0, {{16.0, 178.5}, {343.0, 52.5}}
+                                          Other, 0x10fb1e0d0, {{16.0, 178.5}, {343.0, 52.5}}
+                                        Other, 0x10fb1e1f0, {{16.0, 178.5}, {343.0, 52.5}}
+                                          Other, 0x10fb1e310, {{16.0, 178.5}, {343.0, 52.5}}
+                                            Other, 0x10fb1e430, {{16.0, 178.5}, {343.0, 52.5}}
+                                              StaticText, 0x10fb1e550, {{16.0, 178.5}, {343.0, 52.5}}, identifier: 'about.subtitle', label: '基本要素の基準値画面（SwiftUI）'
+                                      Other, 0x10fb1e670, {{32.0, 177.5}, {311.0, 1.0}}
+                                      Other, 0x10fb14220, {{342.0, 126.0}, {30.0, 458.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                        Other, 0x10fb14340, {{369.0, 574.0}, {3.0, 7.0}}
+                                      Other, 0x10fb14460, {{342.0, 126.0}, {30.0, 458.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                        Other, 0x10fb14580, {{369.0, 574.0}, {3.0, 7.0}}
+                            Other, 0x10fb146a0, {{0.0, 0.0}, {375.0, 667.0}}
+                              Other, 0x10fb147c0, {{0.0, 0.0}, {375.0, 667.0}}
+                Other, 0x10fb148e0, {{0.0, 584.0}, {375.0, 83.0}}
+                  Other, 0x10fb14a00, {{0.0, 0.0}, {375.0, 667.0}}
+                    TabBar, 0x10fb14b20, {{0.0, 584.0}, {375.0, 83.0}}, label: 'Tab Bar'
+                      Other, 0x10fb14c40, {{21.0, 584.0}, {333.0, 62.0}}
+                        Other, 0x10fb14d60, {{21.0, 584.0}, {74.0, 54.0}}
+                        Other, 0x10fb14e80, {{21.0, 584.0}, {333.0, 62.0}}
+                          Button, 0x10fb14fa0, {{25.0, 588.0}, {74.0, 54.0}}, identifier: 'square.grid.2x2', label: '基本要素'
+                            Image, 0x10fb150c0, {{49.0, 595.5}, {27.0, 25.0}}, identifier: 'square.grid.2x2.fill', label: 'grid 2x2'
+                          Button, 0x10fb151e0, {{84.0, 588.0}, {74.0, 54.0}}, identifier: 'tag', label: 'ID/Label'
+                            Image, 0x10fb15300, {{106.0, 594.0}, {30.5, 30.0}}, identifier: 'tag.fill', label: 'tag'
+                          Button, 0x10fb15420, {{143.0, 588.0}, {77.5, 54.0}}, identifier: 'rectangle.3.group', label: 'Grouping'
+                            Image, 0x10fb15540, {{163.0, 595.5}, {37.5, 25.0}}, identifier: 'rectangle.3.group.fill', label: 'rectangle.3.group.fill'
+                          Button, 0x10fb1fec0, {{205.5, 588.0}, {85.5, 54.0}}, identifier: 'paintbrush', label: 'Decorative'
+                            Image, 0x10fb1ffe0, {{233.5, 592.0}, {29.5, 32.0}}, identifier: 'paintbrush.fill', label: 'format'
+                          Button, 0x10fb20100, {{276.0, 588.0}, {74.0, 54.0}}, identifier: 'info.circle', label: 'About', Selected
+                            Image, 0x10fb20220, {{299.0, 594.0}, {27.5, 27.5}}, identifier: 'info.circle.fill', label: 'info'
+                        Other, 0x10fb20340, {{276.0, 588.0}, {74.0, 54.0}}
+                          Other, 0x10fb20460, {{276.0, 588.0}, {74.0, 54.0}}
+                            Other, 0x10fb20580, {{276.0, 588.0}, {74.0, 54.0}}
+                              Other, 0x10fb206a0, {{276.0, 588.0}, {74.0, 54.0}}
+                            Other, 0x10fb207c0, {{276.0, 588.0}, {74.0, 54.0}}
+                              Other, 0x10fb208e0, {{276.0, 588.0}, {74.0, 54.0}}
+                                Other, 0x10fb20a00, {{276.0, 588.0}, {74.0, 54.0}}
+                                  Other, 0x10fb20b20, {{276.0, 588.0}, {74.0, 54.0}}
+                                Other, 0x10fb20c40, {{276.0, 588.0}, {74.0, 54.0}}
+                              Other, 0x10fb20d60, {{276.0, 588.0}, {74.0, 54.0}}
+                  Other, 0x10fb20e80, {{0.0, 584.0}, {375.0, 83.0}}
+                    Other, 0x10fb20fa0, {{0.0, 584.0}, {375.0, 83.0}}
+                      Other, 0x10fb210c0, {{0.0, 584.0}, {375.0, 83.0}}
+                        Other, 0x10fb211e0, {{0.0, 584.0}, {375.0, 83.0}}
+                          Other, 0x10fb21300, {{0.0, 584.0}, {375.0, 83.0}}
+                            Other, 0x10fb21420, {{0.0, 584.0}, {375.0, 83.0}}
+                        Other, 0x10fb21540, {{0.0, 584.0}, {375.0, 83.0}}
+                          Other, 0x10fb21660, {{0.0, 584.0}, {375.0, 83.0}}
 Path to element:
- →Application, 0x11202c580, pid: 36445, label: 'A11y SwiftUI'
+ →Application, 0x10fb1ab90, pid: 83468, label: 'A11y SwiftUI'
 Query chain:
  →Find: Target Application 'com.grandbig.a11ybench.swiftui'
   Output: {
-    Application, 0x105c06210, pid: 36445, label: 'A11y SwiftUI'
+    Application, 0x10fe1dbb0, pid: 83468, label: 'A11y SwiftUI'
   }
 )

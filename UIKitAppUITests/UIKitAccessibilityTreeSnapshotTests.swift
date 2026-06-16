@@ -42,6 +42,10 @@ final class UIKitAccessibilityTreeSnapshotTests: XCTestCase {
         XCTAssertTrue(app.staticTexts["① groupingなし（default）"].waitForExistence(timeout: 2))
         dumpTree(name: "grouping")
 
+        app.tabBars.buttons["Decorative"].tap()
+        XCTAssertTrue(app.staticTexts["① カスタム描画（アクセシビリティなし）"].waitForExistence(timeout: 2))
+        dumpTree(name: "decorative")
+
         app.tabBars.buttons["About"].tap()
         XCTAssertTrue(app.staticTexts["about.title"].waitForExistence(timeout: 2))
         dumpTree(name: "about")
