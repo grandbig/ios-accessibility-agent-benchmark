@@ -56,9 +56,20 @@ ID/Label 画面で AI が見るのは **ラベル**：
 @e25 [button] "idlabel.case5.noLabelButton"   ← ラベルなし → identifier が名前として露出
 ```
 
-- `case3`：id ベースのセレクタ（XCUITest/Maestro の `id:`）は壊れるが、AI は **ラベル「子ボタン3」** で
-  操作するため**影響を受けない**。→「親 identifier の上書き」は **id ベース自動化に効く問題**で、
-  label 駆動の AI Agent には効きにくい、という棲み分けが見える。
+- `case3`：agent-device は id でも label でも検索できる（`find <locator>`）が、実測すると
+  **id 検索も上書きの影響を受ける**：
+
+  ```
+  find "子ボタン3"            → "子ボタン3"               （label 検索：成功）
+  find "idlabel.case1.child"  → "子ボタン1"               （id 検索：id が生きている case1 は成功）
+  find "idlabel.case3.child"  → did not match any element （id 検索：親に上書きされ失敗）
+  find "idlabel.case3.parent" → "親"                       （上書き後の親 id は成功）
+  ```
+
+  → 「親 identifier の上書き」は **id ベースの検出を XCUITest・Maestro・agent-device の3ツールすべてで壊す**。
+  AI Agent が実際には影響を受けにくいのは、agent-device が **ラベル/ロール中心のツリーを見て label で操作する**
+  のが基本だからであって、「id でも問題ない」からではない。**id 駆動と label 駆動で“効く問題”が違う**
+  （id 上書き → id 駆動が全滅 / ラベルなし → label 駆動で id が露出）。
 - `case5`（ラベルなし図形ボタン）：AI が見る名前は **`idlabel.case5.noLabelButton`**（identifier がそのまま露出）。
   人間的に意味をなさず、`accessibilityLabel` の重要性が AI 視点でも裏付けられる。
 
@@ -71,8 +82,10 @@ ID/Label 画面で AI が見るのは **ラベル**：
 
 - AI Agent（agent-device）が見るのは **ロール＋ラベルの意味的ツリー**。本ベンチマークの結論
   （Toggle 中央タップ・装飾UI・装飾は無害）は AI Agent でも一致した。
-- 一方、**id 駆動（XCUITest/Maestro セレクタ）と label 駆動（AI Agent）で「効く問題」が異なる**：
-  identifier の上書きは前者を壊し、後者には効かない。逆に「ラベルなし」は後者で id が露出して効く。
+- 一方、**id 駆動と label 駆動で「効く問題」が異なる**：identifier の上書きは
+  **id 駆動（XCUITest/Maestro/agent-device いずれの id 検索でも）を壊す**が、label 駆動には効かない。
+  逆に「ラベルなし」は label 駆動で id が露出して効く。agent-device は両方の locator を持つが、
+  既定の操作は label/ロール中心。
 - 設計の含意は一貫している：**操作対象には role（trait）と意味のある label を与える**。
   そうすれば id 駆動・label 駆動のどちらの自動化／AI からも、安定して検出・操作できる。
 
