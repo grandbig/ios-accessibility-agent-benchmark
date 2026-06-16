@@ -19,6 +19,7 @@ VoiceOver・XCUITest・Maestro・agent-device（AI Agent）の認識・自動操
 - `docs/grouping.md` — `accessibilityElement(children:)`（combine/contain/ignore）と VoiceOver↔自動操作のトレードオフ
 - `docs/decorative.md` — 装飾UI / カスタム描画（Canvas/Gesture/Blur/Glass）と「見た目のボタン≠機械が理解する構造」
 - `docs/maestro.md` — Maestro（実E2Eツール）視点と XCUITest とのクロスツール比較（`maestro/` にフロー）
+- `docs/agent-device.md` — agent-device（AI Agent）視点と、id駆動 vs label駆動で効く問題の違い
 
 `.xcodeproj` は [XcodeGen](https://github.com/yonaskolb/XcodeGen) で `project.yml` から生成する（git 管理対象外）。
 
