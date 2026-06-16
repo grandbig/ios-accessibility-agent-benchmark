@@ -63,6 +63,11 @@ final class AccessibilityTreeSnapshotTests: XCTestCase {
         app.tabBars.buttons["About"].tap()
         XCTAssertTrue(app.staticTexts["about.title"].waitForExistence(timeout: 2))
         dumpTree(name: "about")
+
+        // 設定（実例）画面：About の「実例」リンクから開く
+        app.buttons["about.settingsLink"].tap()
+        XCTAssertTrue(app.navigationBars["設定"].waitForExistence(timeout: 2))
+        dumpTree(name: "settings")
     }
 
     // MARK: - Helpers

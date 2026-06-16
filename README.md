@@ -48,6 +48,7 @@ VoiceOver・XCUITest・Maestro・agent-device（AI Agent）の認識・自動操
 - `docs/identifier-label.md` — identifier/label の付け方の検証（親子の identifier 干渉ほか）
 - `docs/grouping.md` — `accessibilityElement(children:)`（combine/contain/ignore）と VoiceOver↔自動操作のトレードオフ
 - `docs/decorative.md` — 装飾UI / カスタム描画（Canvas/Gesture/Blur/Glass）と「見た目のボタン≠機械が理解する構造」
+- `docs/settings.md` — 実例「設定」画面（Slider/Stepper/Picker/NavigationLink/複数Toggle）と Stepper の id 分割
 - `docs/voiceover.md` — VoiceOver の実測（`performAccessibilityAudit` ＋ 読み上げ内容）
 - `docs/maestro.md` — Maestro（実E2Eツール）視点と XCUITest とのクロスツール比較（`maestro/` にフロー）
 - `docs/agent-device.md` — agent-device（AI Agent）視点と、id駆動 vs label駆動で効く問題の違い
