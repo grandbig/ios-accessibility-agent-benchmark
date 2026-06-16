@@ -6,6 +6,9 @@ Issue #1 の検証ツール表の4つ目。AI Agent がモバイル UI を操作
 
 > agent-device は LLM そのものではなく、**AI Agent のためのセンサ（snapshot）＋アクチュエータ（click/find）層**。
 > LLM はこの snapshot（意味的ツリー）を見て click を選ぶ。本検証は API キー不要でこの層を直接動かしている。
+>
+> なお agent-device の snapshot は **ツリー型（accessibility-tree）** のモダリティ。スクショを見て座標を叩く
+> **ビジョン型**との違い（どちらが何に効くか）は `docs/ai-agent-scope.md` を参照。
 
 - 実行環境: agent-device 0.17.5 / iPhone SE (3rd generation) iOS 26.0 Simulator
 - セッション: `agent-device open --session sim --platform ios --device "iPhone SE (3rd generation)" com.grandbig.a11ybench.swiftui`
