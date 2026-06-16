@@ -1,0 +1,33 @@
+# 基本要素のハッピーパス（SwiftUIApp）。XCUITest の基準値スイートに対応する Maestro 版。
+# Toggle は id 中央タップでは切り替わらない（XCUITest と同じ）ため、右端を point で叩く。
+appId: com.grandbig.a11ybench.swiftui
+---
+- launchApp:
+    clearState: true
+- assertVisible:
+    id: "basics.staticText"
+# Button: id で検出・タップでき、ラベルが更新される
+- tapOn:
+    id: "basics.primaryButton"
+- assertVisible: "タップ回数: 1"
+# Toggle(Switch): id はフレームが行全体に広がり中央タップが外れるため、右端を point で叩く
+- tapOn:
+    point: "86%,53%"
+- assertVisible:
+    id: "basics.toggle"
+    checked: true
+# Modal: スクロールして開き、閉じる
+# iOS 26 のフローティングタブバーが下部に重なるため、centerElement で中央へ寄せてからタップする
+- scrollUntilVisible:
+    element:
+      id: "basics.showModalButton"
+    direction: DOWN
+    centerElement: true
+- tapOn:
+    id: "basics.showModalButton"
+- assertVisible:
+    id: "modal.title"
+- tapOn:
+    id: "modal.closeButton"
+- assertNotVisible:
+    id: "modal.title"

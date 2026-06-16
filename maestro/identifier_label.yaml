@@ -1,0 +1,16 @@
+# identifier の親→子伝播を Maestro でもクロス確認する（XCUITest と同じ結果になるはず）。
+appId: com.grandbig.a11ybench.swiftui
+---
+- launchApp:
+    clearState: true
+- tapOn: "ID/Label"
+- assertVisible: "① 子Buttonのみにidentifier"
+# ① 子のみ id：子は自分の id で検出できる
+- assertVisible:
+    id: "idlabel.case1.child"
+# ③ 親+子両方 id：子の id は親に上書きされ検出できない（SwiftUI 特有）
+- assertNotVisible:
+    id: "idlabel.case3.child"
+# 上書きした親 id は検出できる
+- assertVisible:
+    id: "idlabel.case3.parent"
