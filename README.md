@@ -4,6 +4,35 @@
 VoiceOver・XCUITest・Maestro・agent-device（AI Agent）の認識・自動操作に
 どう影響するかを検証するベンチマーク。詳細な背景・検証計画は Issue #1 を参照。
 
+## 主な成果（サマリ）
+
+検証カバレッジ：
+
+| 観点 | SwiftUI | UIKit |
+| -- | :--: | :--: |
+| 基本要素（基準値） | ✅ | ✅ |
+| identifier / label の付け方 | ✅ | ✅ |
+| grouping（`accessibilityElement(children:)`） | ✅ | ✅ |
+| 装飾UI（Canvas / Gesture / Blur / Glass） | ✅ | ✅ |
+
+| 検証ツール | Accessibility Inspector 相当 | XCUITest | Maestro | agent-device |
+| -- | :--: | :--: | :--: | :--: |
+| 状態 | ✅ | ✅ | ✅ | ✅ |
+
+主な知見：
+
+- **操作対象には「意味のある label」＋「一意な identifier」＋「正しい role(trait)」**を与えるのが最安定
+  （id駆動・label駆動・VoiceOver・AI のすべてに効く）。
+- **親コンテナに `accessibilityIdentifier` を付けると子に伝播・上書きされる（SwiftUI 特有）**。
+  id ベースの検出が XCUITest / Maestro / agent-device すべてで壊れる。`.contain` 併用で回避できる（UIKit は伝播しない）。
+- **ラベル付き `Toggle` は中央タップが外れる（SwiftUI）**。フレームが行幅に広がるため。UIKit の `UISwitch` は問題なし。
+- **grouping の `.combine` / `.ignore` は VoiceOver 向きだが自動操作で子要素が埋もれる**。`.contain` なら両立。
+- **「タップできる見た目」と「機械が操作対象と理解する構造」は別**。Canvas / Gesture だけの UI は
+  `accessibilityLabel` + `.isButton` がないと操作対象と認識されない。一方 **Blur / Glass 装飾自体は検出に無害**。
+- これらは特定ツールの癖ではなく **Accessibility 設計そのものに起因**し、4ツールで一貫して再現する。
+
+→ 総合比較表（◎○△×）は **[`docs/summary.md`](docs/summary.md)** を参照。
+
 ## 構成
 
 | ターゲット | 説明 |
