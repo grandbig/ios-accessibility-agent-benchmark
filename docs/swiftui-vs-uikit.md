@@ -53,6 +53,12 @@ SwiftUI で両立させるには `.labelsHidden()` + `.accessibilityLabel(...)` 
 | TextField (`basics.textField`) | {{32, 455.5}, {311, 22}} | {{32, 446}, {311, 22}} | ほぼ同等。検出・入力とも可 |
 | StaticText / List item / Tab / Modal / Alert / ScrollView | — | — | いずれも両フレームワークで検出・操作可（差は軽微） |
 
+## identifier の伝播（別ドキュメント）
+
+「親View に `accessibilityIdentifier` を付けると子の検出が壊れる」現象も SwiftUI 特有で、
+UIKit では起きない（View 単位で identifier が独立）。詳細は `docs/identifier-label.md` の
+「SwiftUI vs UIKit: identifier の伝播挙動が正反対」を参照。
+
 ## まとめ
 
 - **「`.tap()` で操作できるか」はフレームワークと実装イディオムで変わる**。同じ「ラベル付きスイッチ」でも、

@@ -23,15 +23,22 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
             tag: 0
         )
 
+        let idLabel = UINavigationController(rootViewController: IdentifierLabelViewController())
+        idLabel.tabBarItem = UITabBarItem(
+            title: "ID/Label",
+            image: UIImage(systemName: "tag"),
+            tag: 1
+        )
+
         let about = UINavigationController(rootViewController: AboutViewController())
         about.tabBarItem = UITabBarItem(
             title: "About",
             image: UIImage(systemName: "info.circle"),
-            tag: 1
+            tag: 2
         )
 
         let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [basics, about]
+        tabBarController.viewControllers = [basics, idLabel, about]
         return tabBarController
     }
 }

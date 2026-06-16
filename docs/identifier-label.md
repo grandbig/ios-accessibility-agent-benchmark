@@ -84,6 +84,37 @@ Button,     identifier: 'idlabel.case3.parent', label: '子ボタン3'   ← cas
 - 子を `子id` で狙っていた XCUITest / Maestro / AI Agent のセレクタが**壊れる**（③）。
 - 同じ identifier を持つ要素が複数生まれ、`Multiple matches` の温床になる（②③: Text と Button が同 id）。
 
+## SwiftUI vs UIKit: identifier の伝播挙動が正反対
+
+同じ6パターンを UIKit でも実装（`UIKitApp/IdentifierLabelViewController.swift`、
+検証 `UIKitAppUITests/UIKitIdentifierLabelUITests.swift`、ツリー `docs/trees/uikit-idlabel.txt`）。
+**UIKit では `accessibilityIdentifier` は View ごとに独立し、親→子へ伝播も上書きもしない。**
+
+UIKit のツリー（②③）:
+
+```
+② Other,      identifier: 'idlabel.case2.parent'    ← 親(UIStackView)が独立要素として id を持つ
+    StaticText, label: '親'                          ← 子Text は無印
+    Button,     label: '子ボタン2'                    ← 子Button も無印（伝播しない）
+
+③ Other,      identifier: 'idlabel.case3.parent'    ← 親は親の id
+    StaticText, label: '親'
+    Button,     identifier: 'idlabel.case3.child', label: '子ボタン3'   ← 子は自分の id を保持（上書きされない）
+```
+
+### フレームワーク比較
+
+| ケース | SwiftUI | UIKit |
+| -- | -- | -- |
+| ② 親のみ id | 親 id が **子Button と Text の両方に複製** | 親 id は **親(UIStackView)だけ**。子は無印 |
+| ③ 親 + 子 両方 id | 親 id が **子 id を上書き**（子 id 消滅） | 子は **自分の id を保持**。親は別要素で別 id |
+| 子を子 id で検出（③） | ❌ できない | ✅ できる |
+| 親 id の正体 | 子要素に乗る（element 化） | 親コンテナ自身が `Other` 要素 |
+
+→ **「親に identifier を付けると子の検出が壊れる」のは SwiftUI 特有の挙動**。UIKit は View 単位で
+identifier が独立するため同じ問題は起きない。SwiftUI で安全に書くには、コンテナへ
+`accessibilityIdentifier` を付けない／付けるなら grouping の意味を理解して使う必要がある。
+
 ## 補足の知見: ラベルの出どころ
 
 ⑤は **Canvas で独自描画したボタンではなく、ごく普通の SwiftUI `Button`** である。
